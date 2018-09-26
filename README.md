@@ -1,5 +1,5 @@
 ![Borg-BackUP-GUI](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/icon.png)
-# Borg-BackUP-GUI
+# Borg BackUP GUI
 
 Many Borg users know exactly what they are doing and only need this program to simply create or delete a new BackUP point. For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
 
@@ -59,7 +59,7 @@ This area makes it easy to set up a Cron job, so that the BackUP service works a
 ![Screenshot4](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/images/screenshot4.png)
 
 
-## The following programs are used by Scripter to create enjoyment.°)
+## The following programs are used by Borg BackUP GUI to create enjoyment.°)
 - [x] borg
 - [x] grep
 - [x] echo
@@ -76,6 +76,6 @@ This area makes it easy to set up a Cron job, so that the BackUP service works a
 - [x] gksudo
 
 
-## For the creation of Scripters (++ the required packages).
+## For the creation of Borg BackUP GUI (++ the required packages).
 
     qmake && make
