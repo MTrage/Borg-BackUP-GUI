@@ -8,9 +8,8 @@ https://borgbackup.readthedocs.io/en/stable/
 ## Borg Videos
 https://asciinema.org/a/133292
 
-If you have many SH scripts and you have them in different folders or subfolders, you will love Scripter. Scripter sorts alphabetically and by hierarchy (also subfolders). Scripter sorts alphabetically and by hierarchy (also subfolders).
-
-Created 2.8.2016 by Marc-André Tragé
+Freely usable for all except military and other antisocial activities.
+Created 1.8.2018 by Marc-André Tragé
 
 
 ## Initiate a new Borg MAIN-BackUP, use an encryption with repokey. 
