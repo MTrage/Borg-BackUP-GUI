@@ -78,3 +78,29 @@ This area makes it easy to set up a Cron job, so that the BackUP service works a
 ## For the creation of Borg BackUP GUI (++ the required packages).
 
     qmake && make
+
+
+## There are 2 ways to start BORG BackUP GUI
+
+1.) Call directly without using a passphrase for the BackUP: 
+
+    ~/BORG-BackUP-GUI/BORG-BackUP-GUI
+
+2.) For a BackUP that uses a passphrase,
+
+    ~/BORG-BackUP-GUI/Passphrase.sh
+
+must be started. The passphrase for the BackUP has to be entered in the Passphrase.sh file.
+
+## As written above for using dark Theme, QdarkStyleSheet has to be added to the BORG BackUP GUI directory.
+For option 1 and 2 you can optionally add a -d at the end to start BORG BackUP GUI with a dark theme.
+
+    ~/BORG-BackUP-GUI/BORG-BackUP-GUI -d
+
+or
+
+    ~/BORG-BackUP-GUI/Passphrase.sh -d
+    
+### If you have any useful changes or improvements, please let me know.
+
+### I wish you a lot of fun with BORG BackUP GUI.
