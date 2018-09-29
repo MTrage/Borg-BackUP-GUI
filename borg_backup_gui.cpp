@@ -2,8 +2,6 @@
 // but it has been named as simple as possible and understandable.
 // Who should not understand something can ask me gladly.
 
-// Freely usable for all except military and other antisocial activities.
-
 // Created 1.8.2018 by Marc-André Tragé
 
 #include "borg_backup_gui.h"
