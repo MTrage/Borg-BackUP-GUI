@@ -1,18 +1,15 @@
 ![Borg-BackUP-GUI](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/icon.png)
 # Borg BackUP GUI
-
 Many Borg users know exactly what they are doing and only need this program to simply create or delete a new BackUP point. For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
 
-## Borg Documentation
-https://borgbackup.readthedocs.io/en/stable/
-## Borg Videos
-https://asciinema.org/a/133292
 
-Freely usable for all except military and other antisocial activities.
-Created 1.8.2018 by Marc-André Tragé
+## BorgBackup (short: Borg) must of course be installed.
+Here you will find everything you need to know about Borg: 
+https://www.borgbackup.org/
 
 
-## Initiate a new Borg MAIN-BackUP, use an encryption with repokey. 
+## For all those who already know Borg, the procedure is quite simple:
+Initiate a new Borg MAIN-BackUP, use an encryption with repokey. 
 This example assumes that you have already mounted your BackUP on a folder in your home directory.
 
     borg init /home/USERNAME/BackUP_Path/BackUP_NAME –encryption=repokey
