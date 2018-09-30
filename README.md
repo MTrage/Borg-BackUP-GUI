@@ -2,7 +2,7 @@
 Many Borg users know exactly what they are doing and only need this program to simply create or delete a new BackUP point. For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
 
 
-## BorgBackup (short: Borg) must of course be installed.
+## BorgBackup (short: Borg) must of course be installed
 Here you will find everything you need to know about Borg: 
 https://www.borgbackup.org/
 
@@ -54,7 +54,7 @@ This area makes it easy to set up a Cron job, so that the BackUP service works a
 ![Screenshot4](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/images/screenshot4.png)
 
 
-## The following programs are used by Borg BackUP GUI to create enjoyment.°)
+## The following programs are used by Borg BackUP GUI to create enjoyment
 - [x] borg
 - [x] grep
 - [x] echo
@@ -70,7 +70,7 @@ This area makes it easy to set up a Cron job, so that the BackUP service works a
 - [x] touch
 - [x] gksudo
 
-## Adjustments in borg_backup_gui.cpp.
+## Adjustments in borg_backup_gui.cpp
 
 In the section "All tools with paths" different system tools are called, e.g. "/usr/bin/echo"! But "echo" can also be located in "/bin/echo", or in another possibly unusual system location. Therefore you should always check all used system tools as well as the paths to them.
 
@@ -88,6 +88,11 @@ All required data is in the distribution, it does not have to be installed addit
 ## For the creation of Borg BackUP GUI (++ the required packages).
 
     qmake && make
+    
+## Make BORG-BackUP GUI executable
+If you just want to have a quick look at "BORG BackUP GUI" and start the /bin/BORG-BackUP-GUI, you have to make the file executable with:
+
+    chmod +x bin/BORG-BackUP-GUI
 
 ## There are 2 ways to start BORG BackUP GUI
 
