@@ -89,7 +89,7 @@ All required data is in the distribution, it does not have to be installed addit
 
     qmake && make
     
-## Make BORG-BackUP GUI executable
+## Make (bin/)BORG-BackUP-GUI executable
 If you just want to have a quick look at "BORG BackUP GUI" and start the /bin/BORG-BackUP-GUI, you have to make the file executable with:
 
     chmod +x bin/BORG-BackUP-GUI
