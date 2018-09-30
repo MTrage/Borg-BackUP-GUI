@@ -19,8 +19,7 @@ All individual settings are made in the BackUP.sh file, this script is read by B
 
 If you want to access an encrypted backup and don't always want to enter the password locally, you can start the Passphrase.sh. In this script you have to insert your passphrase.
 
-### Instructions can be found here:[Instructions](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
+## Instructions can be found here: [Instructions](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
 
-    
 ### If you have any useful changes or improvements, please let me know.
 I wish you a lot of fun with BORG BackUP GUI.
