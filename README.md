@@ -35,7 +35,8 @@ In the BackUP section you will find an overview of the original archive size, as
 
 Furthermore you can mount your BackUP here and of course unmount it. If the BackUP is mounted, BORG BackUP GUI automatically detects this (even when restarting) and disables all functions that could damage the archive in the mounted state. To make the work easier, the mount button is replaced with an "Open Mount" button, which allows you to open the BackUP folder when clicking on it.
 
-Pressing the "all Deteils" button opens the archive overview in the desired text editor. - A PDF export was interned, but this is currently BETA! 
+Pressing the "all Deteils" button opens the archive overview in the desired text editor.
+### A PDF export was interned, but this is currently BETA! 
 ![Screenshot1](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/images/screenshot1.png)
 
 
