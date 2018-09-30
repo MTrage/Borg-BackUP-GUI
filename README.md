@@ -112,5 +112,4 @@ or
     ~/BORG-BackUP-GUI/Passphrase.sh -d
     
 ### If you have any useful changes or improvements, please let me know.
-
-### I wish you a lot of fun with BORG BackUP GUI.
+I wish you a lot of fun with BORG BackUP GUI.
