@@ -1,5 +1,4 @@
 ![Borg-BackUP-GUI](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/images/banner.jpg)
-![Screenshot1](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/images/screenshot1.png)
 Many Borg users know exactly what they are doing and only need this program to simply create or delete a new BackUP point. For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
 
 
