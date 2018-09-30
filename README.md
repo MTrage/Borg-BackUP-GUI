@@ -71,11 +71,24 @@ This area makes it easy to set up a Cron job, so that the BackUP service works a
 - [x] touch
 - [x] gksudo
 
+## Adjustments in borg_backup_gui.cpp.
+
+In the section "All tools with paths" different system tools are called, e.g. "/usr/bin/echo"! But "echo" can also be located in "/bin/echo", or in another possibly unusual system location. Therefore you should always check all used system tools as well as the paths to them.
+
+## Create the program with qmake and make!
+To be able to use qmake and make under the different distributions, the following should already be installed.
+
+### LinuxMint / Ubuntu:
+    sudo apt install qtchooser
+    sudo apt install qt5-default
+    sudo apt install g++
+
+### Manjaro / Anarchy Linux (Arch Linux):
+All required data is in the distribution, it does not have to be installed additionally.
 
 ## For the creation of Borg BackUP GUI (++ the required packages).
 
     qmake && make
-
 
 ## There are 2 ways to start BORG BackUP GUI
 
