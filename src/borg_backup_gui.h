@@ -63,8 +63,8 @@ private slots:
     void INFO(QString c);
     void Show_Hide();
 
-    void Check_Borg_Archiv(QString a);
-    void new_Borg_Archiv(QString a);
+    void Check_Borg_Archive(QString a);
+    void new_Borg_Archive(QString a);
     void write_html_Page();
 
     void run_JSON_Info();
@@ -76,7 +76,7 @@ private slots:
 
     void save_Crontab();
     void check_File_Managers(QString a);
-    void Archiv_Key_Changed();
+    void Archive_Key_Changed();
     void Compression_Type_Value_remove_Items();
     void Weekday_Check();
     void Compression_Build_String();
@@ -85,8 +85,8 @@ private slots:
     void read_all_Profiles();
     void Build_Dir_File();
     void read_Dir_File(QString a, QString ai);
-    void create_Archiv_Key_length();
-    void set_Archiv();
+    void create_Archive_Key_length();
+    void set_Archive();
 
     void on_BackUP_NOW_clicked();
     void on_Mount_clicked();
@@ -113,8 +113,8 @@ private slots:
     void on_Compression_none_auto_currentIndexChanged(const QString a);
     void on_Compression_Type_Value_currentIndexChanged(QString a);
     void on_Status_currentIndexChanged(const QString a);
-    void on_Archiv_Key_textChanged(const QString a);
-    void on_Archiv_Key_File_currentTextChanged(const QString a);
+    void on_Archive_Key_textChanged(const QString a);
+    void on_Archive_Key_File_currentTextChanged(const QString a);
     void on_pass_OK_clicked();
     void on_pass_returnPressed();
     void on_pass_textChanged(const QString a);
@@ -139,11 +139,11 @@ private slots:
     void on_Save_Compression_Config_clicked();
     void on_Save_Mount_Config_clicked();
     void on_remove_BackUP_clicked();
-    void on_New_Archiv_clicked();
+    void on_New_Archive_clicked();
     void on_Create_clicked();
     void on_BackUP_Path_clicked();
-    void on_new_Archiv_Path_textChanged(const QString &arg1);
-    void on_new_Archiv_Name_textChanged(const QString &arg1);
+    void on_new_Archive_Path_textChanged(const QString &arg1);
+    void on_new_Archive_Name_textChanged(const QString &arg1);
 
     void on_Change_3_clicked();
 

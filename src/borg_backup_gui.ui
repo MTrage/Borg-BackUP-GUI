@@ -2960,7 +2960,7 @@ p, li { white-space: pre-wrap; }
     </widget>
     <widget class="QWidget" name="NewArchiv">
      <attribute name="title">
-      <string>&amp;New Archiv</string>
+      <string>&amp;New Archive</string>
      </attribute>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
@@ -3034,7 +3034,7 @@ p, li { white-space: pre-wrap; }
        <string>BackUP Path</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="Archiv_Key_File">
+     <widget class="QComboBox" name="Archive_Key_File">
       <property name="enabled">
        <bool>false</bool>
       </property>
@@ -3075,7 +3075,7 @@ p, li { white-space: pre-wrap; }
        </property>
       </item>
      </widget>
-     <widget class="QLineEdit" name="new_Archiv_Name">
+     <widget class="QLineEdit" name="new_Archive_Name">
       <property name="enabled">
        <bool>false</bool>
       </property>
@@ -3106,7 +3106,7 @@ background:#cccccc;</string>
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Archiv_Key">
+     <widget class="QLineEdit" name="Archive_Key">
       <property name="enabled">
        <bool>false</bool>
       </property>
@@ -3241,7 +3241,7 @@ background:#cccccc;</string>
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="new_Archiv_Path">
+     <widget class="QLineEdit" name="new_Archive_Path">
       <property name="enabled">
        <bool>false</bool>
       </property>
@@ -3357,7 +3357,7 @@ border-radius: 3px;
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="New_Archiv">
+     <widget class="QPushButton" name="New_Archive">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -3380,7 +3380,7 @@ border-radius: 3px;
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select a folder.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="text">
-       <string>New Archiv</string>
+       <string>New Archive</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="textBrowser_7">
@@ -3479,19 +3479,19 @@ p, li { white-space: pre-wrap; }
      <zorder>label_18</zorder>
      <zorder>label_17</zorder>
      <zorder>BackUP_Path</zorder>
-     <zorder>Archiv_Key_File</zorder>
-     <zorder>new_Archiv_Name</zorder>
-     <zorder>Archiv_Key</zorder>
+     <zorder>Archive_Key_File</zorder>
+     <zorder>new_Archive_Name</zorder>
+     <zorder>Archive_Key</zorder>
      <zorder>label_19</zorder>
      <zorder>Create</zorder>
      <zorder>label_27</zorder>
      <zorder>label_20</zorder>
-     <zorder>new_Archiv_Path</zorder>
+     <zorder>new_Archive_Path</zorder>
      <zorder>textBrowser_6</zorder>
      <zorder>textBrowser_8</zorder>
      <zorder>line_8</zorder>
      <zorder>progressBar_4</zorder>
-     <zorder>New_Archiv</zorder>
+     <zorder>New_Archive</zorder>
     </widget>
     <widget class="QWidget" name="Help">
      <attribute name="title">
@@ -4430,12 +4430,12 @@ background: qlineargradient(x2:1, y1:1, x1:1, y1:1, stop: 0 rgba(120,200,255,255
     <string>&amp;Tutorial</string>
    </property>
   </action>
-  <action name="actionLoad_Archiv">
+  <action name="actionLoad_Archive">
    <property name="text">
-    <string>Load Archiv</string>
+    <string>Load Archive</string>
    </property>
   </action>
-  <action name="Set_Archiv">
+  <action name="Set_Archive">
    <property name="text">
     <string>&amp;Select a BackUP</string>
    </property>

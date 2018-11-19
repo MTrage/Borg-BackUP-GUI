@@ -52,8 +52,8 @@ public:
     QAction *Configuration_Menu;
     QAction *Borg_Homepage_Menu;
     QAction *Tutorial_Menu;
-    QAction *actionLoad_Archiv;
-    QAction *Set_Archiv;
+    QAction *actionLoad_Archive;
+    QAction *Set_Archive;
     QAction *Open;
     QWidget *Main;
     QTabWidget *tabWidget;
@@ -169,17 +169,17 @@ public:
     QLabel *label_18;
     QLabel *label_17;
     QPushButton *BackUP_Path;
-    QComboBox *Archiv_Key_File;
-    QLineEdit *new_Archiv_Name;
-    QLineEdit *Archiv_Key;
+    QComboBox *Archive_Key_File;
+    QLineEdit *new_Archive_Name;
+    QLineEdit *Archive_Key;
     QLabel *label_19;
     QPushButton *Create;
     QLabel *label_27;
     QLabel *label_20;
-    QLineEdit *new_Archiv_Path;
+    QLineEdit *new_Archive_Path;
     QTextBrowser *textBrowser_6;
     QProgressBar *progressBar_4;
-    QPushButton *New_Archiv;
+    QPushButton *New_Archive;
     QTextBrowser *textBrowser_7;
     QTextBrowser *textBrowser_8;
     QFrame *line_8;
@@ -259,10 +259,10 @@ public:
         Borg_Homepage_Menu->setObjectName(QStringLiteral("Borg_Homepage_Menu"));
         Tutorial_Menu = new QAction(BORG_BackUP_GUI);
         Tutorial_Menu->setObjectName(QStringLiteral("Tutorial_Menu"));
-        actionLoad_Archiv = new QAction(BORG_BackUP_GUI);
-        actionLoad_Archiv->setObjectName(QStringLiteral("actionLoad_Archiv"));
-        Set_Archiv = new QAction(BORG_BackUP_GUI);
-        Set_Archiv->setObjectName(QStringLiteral("Set_Archiv"));
+        actionLoad_Archive = new QAction(BORG_BackUP_GUI);
+        actionLoad_Archive->setObjectName(QStringLiteral("actionLoad_Archive"));
+        Set_Archive = new QAction(BORG_BackUP_GUI);
+        Set_Archive->setObjectName(QStringLiteral("Set_Archive"));
         Open = new QAction(BORG_BackUP_GUI);
         Open->setObjectName(QStringLiteral("Open"));
         Main = new QWidget(BORG_BackUP_GUI);
@@ -1213,40 +1213,40 @@ public:
         BackUP_Path->setEnabled(false);
         BackUP_Path->setGeometry(QRect(10, 230, 220, 40));
         BackUP_Path->setFont(font1);
-        Archiv_Key_File = new QComboBox(NewArchiv);
-        Archiv_Key_File->addItem(QString());
-        Archiv_Key_File->addItem(QString());
-        Archiv_Key_File->addItem(QString());
-        Archiv_Key_File->addItem(QString());
-        Archiv_Key_File->addItem(QString());
-        Archiv_Key_File->setObjectName(QStringLiteral("Archiv_Key_File"));
-        Archiv_Key_File->setEnabled(false);
-        Archiv_Key_File->setGeometry(QRect(750, 410, 240, 40));
-        Archiv_Key_File->setStyleSheet(QStringLiteral(""));
-        new_Archiv_Name = new QLineEdit(NewArchiv);
-        new_Archiv_Name->setObjectName(QStringLiteral("new_Archiv_Name"));
-        new_Archiv_Name->setEnabled(false);
-        new_Archiv_Name->setGeometry(QRect(610, 230, 380, 40));
-        new_Archiv_Name->setFont(font4);
-        new_Archiv_Name->setStyleSheet(QLatin1String("border-radius: 4px;\n"
+        Archive_Key_File = new QComboBox(NewArchiv);
+        Archive_Key_File->addItem(QString());
+        Archive_Key_File->addItem(QString());
+        Archive_Key_File->addItem(QString());
+        Archive_Key_File->addItem(QString());
+        Archive_Key_File->addItem(QString());
+        Archive_Key_File->setObjectName(QStringLiteral("Archive_Key_File"));
+        Archive_Key_File->setEnabled(false);
+        Archive_Key_File->setGeometry(QRect(750, 410, 240, 40));
+        Archive_Key_File->setStyleSheet(QStringLiteral(""));
+        new_Archive_Name = new QLineEdit(NewArchiv);
+        new_Archive_Name->setObjectName(QStringLiteral("new_Archive_Name"));
+        new_Archive_Name->setEnabled(false);
+        new_Archive_Name->setGeometry(QRect(610, 230, 380, 40));
+        new_Archive_Name->setFont(font4);
+        new_Archive_Name->setStyleSheet(QLatin1String("border-radius: 4px;\n"
 "border-top: 2px solid #000000;\n"
 "border-left: 2px solid #000000;\n"
 "border-bottom: 2px solid #FFFFFF;\n"
 "border-right: 2px solid #FFFFFF;\n"
 "background:#cccccc;"));
-        new_Archiv_Name->setReadOnly(false);
-        Archiv_Key = new QLineEdit(NewArchiv);
-        Archiv_Key->setObjectName(QStringLiteral("Archiv_Key"));
-        Archiv_Key->setEnabled(false);
-        Archiv_Key->setGeometry(QRect(10, 410, 690, 40));
-        Archiv_Key->setFont(font4);
-        Archiv_Key->setStyleSheet(QLatin1String("border-radius: 4px;\n"
+        new_Archive_Name->setReadOnly(false);
+        Archive_Key = new QLineEdit(NewArchiv);
+        Archive_Key->setObjectName(QStringLiteral("Archive_Key"));
+        Archive_Key->setEnabled(false);
+        Archive_Key->setGeometry(QRect(10, 410, 690, 40));
+        Archive_Key->setFont(font4);
+        Archive_Key->setStyleSheet(QLatin1String("border-radius: 4px;\n"
 "border-top: 2px solid #000000;\n"
 "border-left: 2px solid #000000;\n"
 "border-bottom: 2px solid #FFFFFF;\n"
 "border-right: 2px solid #FFFFFF;\n"
 "background:#cccccc;"));
-        Archiv_Key->setReadOnly(false);
+        Archive_Key->setReadOnly(false);
         label_19 = new QLabel(NewArchiv);
         label_19->setObjectName(QStringLiteral("label_19"));
         label_19->setEnabled(true);
@@ -1270,18 +1270,18 @@ public:
         label_20->setGeometry(QRect(750, 380, 240, 30));
         label_20->setFont(font4);
         label_20->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-        new_Archiv_Path = new QLineEdit(NewArchiv);
-        new_Archiv_Path->setObjectName(QStringLiteral("new_Archiv_Path"));
-        new_Archiv_Path->setEnabled(false);
-        new_Archiv_Path->setGeometry(QRect(240, 230, 360, 40));
-        new_Archiv_Path->setFont(font4);
-        new_Archiv_Path->setStyleSheet(QLatin1String("color:#555555;\n"
+        new_Archive_Path = new QLineEdit(NewArchiv);
+        new_Archive_Path->setObjectName(QStringLiteral("new_Archive_Path"));
+        new_Archive_Path->setEnabled(false);
+        new_Archive_Path->setGeometry(QRect(240, 230, 360, 40));
+        new_Archive_Path->setFont(font4);
+        new_Archive_Path->setStyleSheet(QLatin1String("color:#555555;\n"
 "border-radius: 4px;\n"
 "border-width:2px;\n"
 "border-style:ridge;\n"
 "border-color:#888888;\n"
 "background:#cccccc;"));
-        new_Archiv_Path->setReadOnly(true);
+        new_Archive_Path->setReadOnly(true);
         textBrowser_6 = new QTextBrowser(NewArchiv);
         textBrowser_6->setObjectName(QStringLiteral("textBrowser_6"));
         textBrowser_6->setGeometry(QRect(0, 10, 970, 150));
@@ -1311,11 +1311,11 @@ public:
         progressBar_4->setValue(0);
         progressBar_4->setAlignment(Qt::AlignCenter);
         progressBar_4->setOrientation(Qt::Horizontal);
-        New_Archiv = new QPushButton(NewArchiv);
-        New_Archiv->setObjectName(QStringLiteral("New_Archiv"));
-        New_Archiv->setEnabled(true);
-        New_Archiv->setGeometry(QRect(10, 180, 220, 40));
-        New_Archiv->setFont(font4);
+        New_Archive = new QPushButton(NewArchiv);
+        New_Archive->setObjectName(QStringLiteral("New_Archive"));
+        New_Archive->setEnabled(true);
+        New_Archive->setGeometry(QRect(10, 180, 220, 40));
+        New_Archive->setFont(font4);
         textBrowser_7 = new QTextBrowser(NewArchiv);
         textBrowser_7->setObjectName(QStringLiteral("textBrowser_7"));
         textBrowser_7->setGeometry(QRect(0, 310, 970, 70));
@@ -1346,19 +1346,19 @@ public:
         label_18->raise();
         label_17->raise();
         BackUP_Path->raise();
-        Archiv_Key_File->raise();
-        new_Archiv_Name->raise();
-        Archiv_Key->raise();
+        Archive_Key_File->raise();
+        new_Archive_Name->raise();
+        Archive_Key->raise();
         label_19->raise();
         Create->raise();
         label_27->raise();
         label_20->raise();
-        new_Archiv_Path->raise();
+        new_Archive_Path->raise();
         textBrowser_6->raise();
         textBrowser_8->raise();
         line_8->raise();
         progressBar_4->raise();
-        New_Archiv->raise();
+        New_Archive->raise();
         Help = new QWidget();
         Help->setObjectName(QStringLiteral("Help"));
         textBrowser_13 = new QTextBrowser(Help);
@@ -1686,8 +1686,8 @@ public:
         Configuration_Menu->setText(QApplication::translate("BORG_BackUP_GUI", "C&onfiguration", nullptr));
         Borg_Homepage_Menu->setText(QApplication::translate("BORG_BackUP_GUI", "&Borg Homepage", nullptr));
         Tutorial_Menu->setText(QApplication::translate("BORG_BackUP_GUI", "&Tutorial", nullptr));
-        actionLoad_Archiv->setText(QApplication::translate("BORG_BackUP_GUI", "Load Archiv", nullptr));
-        Set_Archiv->setText(QApplication::translate("BORG_BackUP_GUI", "&Select a BackUP", nullptr));
+        actionLoad_Archive->setText(QApplication::translate("BORG_BackUP_GUI", "Load Archive", nullptr));
+        Set_Archive->setText(QApplication::translate("BORG_BackUP_GUI", "&Select a BackUP", nullptr));
         Open->setText(QApplication::translate("BORG_BackUP_GUI", "&Open", nullptr));
         progressBar_2->setFormat(QApplication::translate("BORG_BackUP_GUI", "%p%", nullptr));
         label_3->setText(QApplication::translate("BORG_BackUP_GUI", "Deduplicated size", nullptr));
@@ -1858,11 +1858,11 @@ public:
         BackUP_Path->setToolTip(QApplication::translate("BORG_BackUP_GUI", "<html><head/><body><p>Select a folder.</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
         BackUP_Path->setText(QApplication::translate("BORG_BackUP_GUI", "BackUP Path", nullptr));
-        Archiv_Key_File->setItemText(0, QApplication::translate("BORG_BackUP_GUI", "none", nullptr));
-        Archiv_Key_File->setItemText(1, QApplication::translate("BORG_BackUP_GUI", "1024++", nullptr));
-        Archiv_Key_File->setItemText(2, QApplication::translate("BORG_BackUP_GUI", "2048++", nullptr));
-        Archiv_Key_File->setItemText(3, QApplication::translate("BORG_BackUP_GUI", "4096++", nullptr));
-        Archiv_Key_File->setItemText(4, QApplication::translate("BORG_BackUP_GUI", "8192++", nullptr));
+        Archive_Key_File->setItemText(0, QApplication::translate("BORG_BackUP_GUI", "none", nullptr));
+        Archive_Key_File->setItemText(1, QApplication::translate("BORG_BackUP_GUI", "1024++", nullptr));
+        Archive_Key_File->setItemText(2, QApplication::translate("BORG_BackUP_GUI", "2048++", nullptr));
+        Archive_Key_File->setItemText(3, QApplication::translate("BORG_BackUP_GUI", "4096++", nullptr));
+        Archive_Key_File->setItemText(4, QApplication::translate("BORG_BackUP_GUI", "8192++", nullptr));
 
         label_19->setText(QApplication::translate("BORG_BackUP_GUI", "Passphrase", nullptr));
 #ifndef QT_NO_TOOLTIP
@@ -1881,9 +1881,9 @@ public:
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">At </span><span style=\" font-family:'Droid Sans Thai';\">BackUP Name</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\"> enter the name of the backup you want to create.</span></p></body></html>", nullptr));
         progressBar_4->setFormat(QString());
 #ifndef QT_NO_TOOLTIP
-        New_Archiv->setToolTip(QApplication::translate("BORG_BackUP_GUI", "<html><head/><body><p>Select a folder.</p></body></html>", nullptr));
+        New_Archive->setToolTip(QApplication::translate("BORG_BackUP_GUI", "<html><head/><body><p>Select a folder.</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
-        New_Archiv->setText(QApplication::translate("BORG_BackUP_GUI", "New Archiv", nullptr));
+        New_Archive->setText(QApplication::translate("BORG_BackUP_GUI", "New Archive", nullptr));
         textBrowser_7->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1894,7 +1894,7 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">Then you can press </span><span style=\" font-family:'Droid Sans Thai';\">Create</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\"> and a new empty Borg BackUP will be created for you. </span></p></body></html>", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(NewArchiv), QApplication::translate("BORG_BackUP_GUI", "&New Archiv", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(NewArchiv), QApplication::translate("BORG_BackUP_GUI", "&New Archive", nullptr));
         textBrowser_13->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
