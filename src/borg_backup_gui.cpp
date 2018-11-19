@@ -163,20 +163,20 @@ static QString SH      = "sh",       // "/usr/bin/sh",
 // Status control of program queries and their values.
 static QString Borg_Info_OK,
                Borg_List_OK,
-              new_Archiv_OK,
+              new_Archive_OK,
                    Mount_OK,
                  Crontab_OK,
             save_Crontab_OK,
-            check_Archiv_OK,
+            check_Archive_OK,
         Borg_Detail_Info_OK,
          export_Profiles_OK,
                Borg_Info_ERROR,
                Borg_List_ERROR,
-              new_Archiv_ERROR,
+              new_Archive_ERROR,
                    Mount_ERROR,
                  Crontab_ERROR,
             save_Crontab_ERROR,
-            check_Archiv_ERROR,
+            check_Archive_ERROR,
         Borg_Detail_Info_ERROR,
          export_Profiles_ERROR,
                      ask_a,
@@ -269,29 +269,29 @@ void BORG_BackUP_GUI::run_Detail_JSON_Info(QString a){
 }
 
 // BORG: check whether an archive is available.
-void BORG_BackUP_GUI::Check_Borg_Archiv(QString a){
+void BORG_BackUP_GUI::Check_Borg_Archive(QString a){
     QProcess             process;
                          process.start(BORG + " info " + a);
                          process.waitForFinished(-1);
     QString     stdout = process.readAllStandardOutput(),
                 stderr = process.readAllStandardError();
-    check_Archiv_OK    = stdout;
-    check_Archiv_ERROR = stderr;
+    check_Archive_OK    = stdout;
+    check_Archive_ERROR = stderr;
 }
 
 // BORG: create a new Borg BackUP.
-void BORG_BackUP_GUI::new_Borg_Archiv(QString a){
+void BORG_BackUP_GUI::new_Borg_Archive(QString a){
     static QString START_BORG_PASSPHRASE = qgetenv("BORG_PASSPHRASE");
 
-    qputenv("BORG_PASSPHRASE", qPrintable(ui->Archiv_Key->text()));
+    qputenv("BORG_PASSPHRASE", qPrintable(ui->Archive_Key->text()));
 
     QProcess           process;
                        process.start(a);
                        process.waitForFinished(-1);
     QString   stdout = process.readAllStandardOutput(),
               stderr = process.readAllStandardError();
-    new_Archiv_OK    = stdout;
-    new_Archiv_ERROR = stderr;
+    new_Archive_OK    = stdout;
+    new_Archive_ERROR = stderr;
 
     qputenv("BORG_PASSPHRASE", qPrintable(START_BORG_PASSPHRASE));
 }
@@ -329,7 +329,7 @@ void BORG_BackUP_GUI::save_Crontab(){
     save_Crontab_ERROR = stderr;
 }
 
-// Export all profiles to the export folder run_export_Profiles("-zcvf", "Archiv_Name.tar.gz", "Path_to_Folder");
+// Export all profiles to the export folder run_export_Profiles("-zcvf", "Archive_Name.tar.gz", "Path_to_Folder");
 void BORG_BackUP_GUI::run_export_Profiles(QString x, QString y, QString z){
     QProcess                process;
                             process.start(TAR + " " + x + " " + y + " " + z);
@@ -876,11 +876,11 @@ void BORG_BackUP_GUI::Main_Window(){
           ui->Unlocked_Selecton->setIconSize(QSize(64, 64));
           ui->Unlocked_Selecton->setStyleSheet("padding: 2 0 0 0;");
           ui->Unlocked_Selecton->setStyleSheet("background:#999999;");
-                 ui->New_Archiv->setIcon(Icon_Lck1);
-                 ui->New_Archiv->setIconSize(Lck1_Icon.rect().size());
-                 ui->New_Archiv->setIconSize(QSize(32, 32));
-                 ui->New_Archiv->setStyleSheet("padding: 2 0 0 0;");
-                 ui->New_Archiv->setStyleSheet("background:#770000; color:#FFFFFF;");
+                 ui->New_Archive->setIcon(Icon_Lck1);
+                 ui->New_Archive->setIconSize(Lck1_Icon.rect().size());
+                 ui->New_Archive->setIconSize(QSize(32, 32));
+                 ui->New_Archive->setStyleSheet("padding: 2 0 0 0;");
+                 ui->New_Archive->setStyleSheet("background:#770000; color:#FFFFFF;");
                   ui->Remove_IN->setIcon(Icon_Trash);
                   ui->Remove_IN->setIconSize(Trash_Icon.rect().size());
                   ui->Remove_IN->setIconSize(QSize(32, 32));
@@ -1922,7 +1922,7 @@ void BORG_BackUP_GUI::on_AddChange_clicked(){
 }
 
 // --- BEG --- Integration of a new or existing archive.
-void BORG_BackUP_GUI::set_Archiv(){
+void BORG_BackUP_GUI::set_Archive(){
     QString a = ui->pathInfo_2->text(),
             b = QFileDialog::getExistingDirectory(this, tr("Select the BackUP directory"),Home_Path,
         QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
@@ -1936,8 +1936,8 @@ void BORG_BackUP_GUI::set_Archiv(){
         QFile   exists_BackUP_File(exists_BackUP),
                 exists_BackUP_File_removed(exists_BackUP_removed);
         if(exists_BackUP_File.exists() || exists_BackUP_File_removed.exists()){
-                 ui->Archiv_Key->setDisabled(true);
-            ui->Archiv_Key_File->setDisabled(true);
+                 ui->Archive_Key->setDisabled(true);
+            ui->Archive_Key_File->setDisabled(true);
             if(exists_BackUP_File.exists()){
                 ERROR("This BackUP is already in the BORG BackUP GUI maintenance!");
             }
@@ -1972,8 +1972,8 @@ void BORG_BackUP_GUI::set_Archiv(){
                          ui->pathInfo_3->setText(g);
                     QString h = e.replace(g,"");
                          ui->pathInfo_2->setText(h);
-                         ui->Archiv_Key->setEnabled(true);
-                    ui->Archiv_Key_File->setEnabled(true);
+                         ui->Archive_Key->setEnabled(true);
+                    ui->Archive_Key_File->setEnabled(true);
                     BackUP_Name = g;
                     QFile::rename(PATH+"/profiles/"+BackUP_Name+".removed", PATH+"/profiles/"+BackUP_Name+".PASSPHRASE");
                     read_all_Profiles();
@@ -1989,8 +1989,8 @@ void BORG_BackUP_GUI::set_Archiv(){
                          ui->pathInfo_3->setText(g);
                     QString h = e.replace(g,"");
                          ui->pathInfo_2->setText(h);
-                         ui->Archiv_Key->setEnabled(true);
-                    ui->Archiv_Key_File->setEnabled(true);
+                         ui->Archive_Key->setEnabled(true);
+                    ui->Archive_Key_File->setEnabled(true);
                     BackUP_Name = g;
                     QFile().remove(qPrintable(PATH+"/profiles/"+g+".removed"));
                        ui->frame_login->setGeometry(QRect(230, 110, 540, 80));
@@ -2017,9 +2017,9 @@ void BORG_BackUP_GUI::set_Archiv(){
             }
         }
         else if (!d.exists()){
-                ERROR("Not a Borg Archiv!");
-                     ui->Archiv_Key->setDisabled(true);
-                ui->Archiv_Key_File->setDisabled(true);
+                ERROR("Not a Borg Archive!");
+                     ui->Archive_Key->setDisabled(true);
+                ui->Archive_Key_File->setDisabled(true);
         }
         else{
             QString e = b;
@@ -2028,8 +2028,8 @@ void BORG_BackUP_GUI::set_Archiv(){
                  ui->pathInfo_3->setText(g);
             QString h = e.replace(g,"");
                  ui->pathInfo_2->setText(h);
-                 ui->Archiv_Key->setEnabled(true);
-            ui->Archiv_Key_File->setEnabled(true);
+                 ui->Archive_Key->setEnabled(true);
+            ui->Archive_Key_File->setEnabled(true);
             BackUP_Name = g;
                ui->frame_login->setGeometry(QRect(230, 110, 540, 80));
                  ui->tabWidget->setEnabled(false);
@@ -2295,12 +2295,12 @@ void BORG_BackUP_GUI::Random_Key_Base64(int x, int y){
     ui->progressBar_4->setValue(100);
 }
 
-// Archiv Key: create a key with selected excess length!
-void BORG_BackUP_GUI::create_Archiv_Key_length(){
-    QString a =      ui->Archiv_Key->text(),
-            b = ui->Archiv_Key_File->currentText(),
+// Archive Key: create a key with selected excess length!
+void BORG_BackUP_GUI::create_Archive_Key_length(){
+    QString a =      ui->Archive_Key->text(),
+            b = ui->Archive_Key_File->currentText(),
             c = "",
-         Name = ui->new_Archiv_Name->text();
+         Name = ui->new_Archive_Name->text();
     if(a=="" && b!="none"){
         if(b=="1024++"){
             Random_Key_Base64(33,33);
@@ -2340,26 +2340,26 @@ void BORG_BackUP_GUI::create_Archiv_Key_length(){
       ui->progressBar_4->setValue(0);
     QPixmap Lck1_Icon(PATH+"/images/locked.png");
     QIcon   Icon_Lck1(Lck1_Icon);
-         ui->Archiv_Key->setEnabled(false);
-    ui->Archiv_Key_File->setEnabled(false);
+         ui->Archive_Key->setEnabled(false);
+    ui->Archive_Key_File->setEnabled(false);
 }
 
 
-// Archiv Key: activate or deactivate activities of the different options when entering the password.
-void BORG_BackUP_GUI::Archiv_Key_Changed(){
-    QString a =      ui->Archiv_Key->text(),
-            b = ui->Archiv_Key_File->currentText();
+// Archive Key: activate or deactivate activities of the different options when entering the password.
+void BORG_BackUP_GUI::Archive_Key_Changed(){
+    QString a =      ui->Archive_Key->text(),
+            b = ui->Archive_Key_File->currentText();
     if(a!=""){
-        ui->Archiv_Key_File->setDisabled(true);
+        ui->Archive_Key_File->setDisabled(true);
     }
     else{
-         ui->Archiv_Key_File->setEnabled(true);
+         ui->Archive_Key_File->setEnabled(true);
     }
     if(b!="none"){
-        ui->Archiv_Key->setDisabled(true);
+        ui->Archive_Key->setDisabled(true);
     }
     else{
-         ui->Archiv_Key->setEnabled(true);
+         ui->Archive_Key->setEnabled(true);
     }
     if(a!="" || b!="none"){
         ui->Create->setEnabled(true);
@@ -2369,16 +2369,16 @@ void BORG_BackUP_GUI::Archiv_Key_Changed(){
     }
 }
 
-// Archiv Key: call Archive_Key_Changed() for changes in the text field. QString b = a currently unused!
-void BORG_BackUP_GUI::on_Archiv_Key_textChanged(const QString a){
+// Archive Key: call Archive_Key_Changed() for changes in the text field. QString b = a currently unused!
+void BORG_BackUP_GUI::on_Archive_Key_textChanged(const QString a){
     QString b = a;
-    Archiv_Key_Changed();
+    Archive_Key_Changed();
 }
 
-// Archiv Key: call Archive_Key_Changed() for changes in the key selection. QString b = a currently unused!
-void BORG_BackUP_GUI::on_Archiv_Key_File_currentTextChanged(const QString a){
+// Archive Key: call Archive_Key_Changed() for changes in the key selection. QString b = a currently unused!
+void BORG_BackUP_GUI::on_Archive_Key_File_currentTextChanged(const QString a){
     QString b = a;
-    Archiv_Key_Changed();
+    Archive_Key_Changed();
 }
 // END Build a Keyfile –––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -2422,9 +2422,9 @@ void BORG_BackUP_GUI::on_pass_OK_clicked(){
     else{
         qputenv("BORG_PASSPHRASE", qPrintable(ui->pass->text()));
     }
-    Check_Borg_Archiv(BackUP_Path.replace("\"","")+BackUP_Name.replace("\"",""));
+    Check_Borg_Archive(BackUP_Path.replace("\"","")+BackUP_Name.replace("\"",""));
 // Is executed if the archive exists and no error (borg info call) is issued.
-    if (check_Archiv_OK.contains("Repository ID", Qt::CaseSensitive)){
+    if (check_Archive_OK.contains("Repository ID", Qt::CaseSensitive)){
           ui->add_NEW_BackUP->hide();
             ui->all_Profiles->setGeometry(QRect(-20, -940, 1040, 810));
         ui->frame_login_info->setGeometry(QRect(20, -100, 410, 60));
@@ -2438,7 +2438,7 @@ void BORG_BackUP_GUI::on_pass_OK_clicked(){
         Main_Window();
     }
 // If executed, there should be an error when executing "borg info" for the archive.
-    if (check_Archiv_ERROR.contains("incorrect", Qt::CaseSensitive) || check_Archiv_ERROR.contains("error", Qt::CaseSensitive)){
+    if (check_Archive_ERROR.contains("incorrect", Qt::CaseSensitive) || check_Archive_ERROR.contains("error", Qt::CaseSensitive)){
         ui->add_NEW_BackUP->show();
         ui->login_black_BG->setGeometry(QRect(-20, 0, 1040, 910));
           ui->all_Profiles->setGeometry(QRect(230, 180, 540, 260));
@@ -2840,8 +2840,8 @@ void BORG_BackUP_GUI::save_BackUP(QString mode){
     QString BackUP_A =      ui->pathInfo_3->text(),
             BackUP_B =      ui->pathInfo_2->text();
     if(mode=="new" || mode=="init"){
-            BackUP_A = ui->new_Archiv_Name->text();
-            BackUP_B = ui->new_Archiv_Path->text()+"/";
+            BackUP_A = ui->new_Archive_Name->text();
+            BackUP_B = ui->new_Archive_Path->text()+"/";
     }
     QString BackUP = "BackUP_Name=\"" + BackUP_A + "\"\nBackUP_Path=\"" + BackUP_B +"\"\n",
             Compression    = " " + ui->test_Pack->text(),
@@ -2959,9 +2959,9 @@ void BORG_BackUP_GUI::save_BackUP(QString mode){
     o.replace("''","").replace("//","/");
     QString INFO_SH_TEXT = "#!/bin/sh\n# BORG BackUP GUI\n# created by Marc-André Tragé\n# \n# This script was created automatically and should not be changed.\n# Direct changes in the script that are not made by Borg BackUP GUI\n# could lead to errors in the function as well as in BackUP!\n#\n# More information and help can be found here:\n# https://github.com/MTrage/Borg-BackUP-GUI\n\n",
             Script       = INFO_SH_TEXT + BackUP + BackUP_Parameters + Data_IN + Data_OUT + Mount_Path + File_Managers + "date=$(date +\"%Y.%m.%d-%H:%M:%S\")\n" + "borg create" + Compression + "--comment \"$BORG_Snapshot_Comment\" " + BackUP_B + BackUP_A + "::$date \\\n" + o;
-    QString new_Archiv_Name_TEXT = ui->new_Archiv_Name->text().replace("\"","");
+    QString new_Archive_Name_TEXT = ui->new_Archive_Name->text().replace("\"","");
     if(mode=="init"){
-       BackUP_Name = ui->new_Archiv_Name->text();
+       BackUP_Name = ui->new_Archive_Name->text();
     }
     QFile file(PATH + "/profiles/" + BackUP_Name + ".sh");
           file.open(QIODevice::WriteOnly | QIODevice::Text);
@@ -2971,9 +2971,9 @@ void BORG_BackUP_GUI::save_BackUP(QString mode){
     Changes_in_Areas = 0;
     QString PASS_KEY = "export BORG_PASSPHRASE='B O R G P A S S P H R A S E'\n\n";
     if(mode=="init"){
-       BackUP_Name = ui->new_Archiv_Name->text();
-       PASS_KEY = "export BORG_PASSCOMMAND=''\nexport BORG_PASSPHRASE='" + ui->Archiv_Key->text() + "'\n\n";
-       if(ui->Archiv_Key->text()==""){
+       BackUP_Name = ui->new_Archive_Name->text();
+       PASS_KEY = "export BORG_PASSCOMMAND=''\nexport BORG_PASSPHRASE='" + ui->Archive_Key->text() + "'\n\n";
+       if(ui->Archive_Key->text()==""){
            PASS_KEY = "export BORG_PASSPHRASE=''\nexport BORG_PASSCOMMAND='cat " + PATH + "/profiles/." + BackUP_Name +".key'\n\n";
        }
     }
@@ -2986,14 +2986,14 @@ void BORG_BackUP_GUI::save_BackUP(QString mode){
                                         "START_PATH=\"`dirname \\\"$0\\\"`\"\n"
                                         "sh $START_PATH/" + BackUP_Name.replace("\"","") + ".sh $1";
     if(mode=="new"){
-        QFile fileA(PATH + "/profiles/" + new_Archiv_Name_TEXT + ".PASSPHRASE");
+        QFile fileA(PATH + "/profiles/" + new_Archive_Name_TEXT + ".PASSPHRASE");
               fileA.open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream outA(&fileA);
         outA << PASSPHRASE;
         fileA.close();
     }
     if(mode=="init"){
-        QFile fileB(PATH + "/profiles/" + new_Archiv_Name_TEXT + ".PASSPHRASE");
+        QFile fileB(PATH + "/profiles/" + new_Archive_Name_TEXT + ".PASSPHRASE");
               fileB.open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream outB(&fileB);
         outB << PASSPHRASE;
@@ -3079,7 +3079,7 @@ void BORG_BackUP_GUI::on_all_Profiles_currentRowChanged(int currentRow){
 void BORG_BackUP_GUI::on_add_NEW_BackUP_clicked(){
     ui->all_Profiles->setEnabled(false);
     qApp->processEvents();
-    set_Archiv();
+    set_Archive();
     ui->all_Profiles->setEnabled(true);
 }
 
@@ -3152,69 +3152,69 @@ void BORG_BackUP_GUI::on_remove_BackUP_clicked(){
     }
 }
 
-// New Archiv Area: Activates the GUI for a new BackUP.
-void BORG_BackUP_GUI::on_New_Archiv_clicked(){
+// New Archive Area: Activates the GUI for a new BackUP.
+void BORG_BackUP_GUI::on_New_Archive_clicked(){
     QPixmap Lck2_Icon(PATH+"/images/unlocked.png");
     QIcon   Icon_Lck2(Lck2_Icon);
     ui->BackUP_Path->setEnabled(true);
-     ui->New_Archiv->setEnabled(false);
-     ui->New_Archiv->setIcon(Icon_Lck2);
-     ui->New_Archiv->setIconSize(Lck2_Icon.rect().size());
-     ui->New_Archiv->setIconSize(QSize(32, 32));
-     ui->New_Archiv->setStyleSheet("padding: 2 0 0 0;");
-     ui->New_Archiv->setStyleSheet("background:#000077; color:#FFFFFF;");
+     ui->New_Archive->setEnabled(false);
+     ui->New_Archive->setIcon(Icon_Lck2);
+     ui->New_Archive->setIconSize(Lck2_Icon.rect().size());
+     ui->New_Archive->setIconSize(QSize(32, 32));
+     ui->New_Archive->setStyleSheet("padding: 2 0 0 0;");
+     ui->New_Archive->setStyleSheet("background:#000077; color:#FFFFFF;");
 }
 
-// New Archiv Area: If the path was specified, the name entry is enabled in the GUI.
-void BORG_BackUP_GUI::on_new_Archiv_Path_textChanged(const QString &arg1){
+// New Archive Area: If the path was specified, the name entry is enabled in the GUI.
+void BORG_BackUP_GUI::on_new_Archive_Path_textChanged(const QString &arg1){
     if(arg1!=""){
-        ui->new_Archiv_Name->setEnabled(true);
+        ui->new_Archive_Name->setEnabled(true);
     }
     else{
-        ui->new_Archiv_Name->setEnabled(false);
+        ui->new_Archive_Name->setEnabled(false);
     }
 }
 
-// New Archiv Area: Allows the user to specify the BackUP path.
+// New Archive Area: Allows the user to specify the BackUP path.
 void BORG_BackUP_GUI::on_BackUP_Path_clicked(){
-    QString a = ui->new_Archiv_Path->text(),
+    QString a = ui->new_Archive_Path->text(),
             b = QFileDialog::getExistingDirectory(this, tr("Select a BackUP directory"),
         Home_Path,
         QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
     int c = b.length();
     if(c!=0){
-        ui->new_Archiv_Path->setText(b);
+        ui->new_Archive_Path->setText(b);
     }
 }
 
-// New Archiv Area: If the BackUP name was specified, the KEY functions are released in the GUI.
-void BORG_BackUP_GUI::on_new_Archiv_Name_textChanged(const QString &arg1){
+// New Archive Area: If the BackUP name was specified, the KEY functions are released in the GUI.
+void BORG_BackUP_GUI::on_new_Archive_Name_textChanged(const QString &arg1){
     if(arg1!=""){
-        QString a = ui->new_Archiv_Name->text();
+        QString a = ui->new_Archive_Name->text();
         a.replace("\"","-").replace("\\","-").replace(" ","-").replace(",","-").replace(";","-").replace("/","-");
-        ui->new_Archiv_Name->setText(a);
-             ui->Archiv_Key->setEnabled(true);
-        ui->Archiv_Key_File->setEnabled(true);
+        ui->new_Archive_Name->setText(a);
+             ui->Archive_Key->setEnabled(true);
+        ui->Archive_Key_File->setEnabled(true);
     }
     else{
-             ui->Archiv_Key->setEnabled(false);
-        ui->Archiv_Key_File->setEnabled(false);
+             ui->Archive_Key->setEnabled(false);
+        ui->Archive_Key_File->setEnabled(false);
                  ui->Create->setEnabled(false);
     }
 }
 
-// New Archiv Area: Reads all entered data for a new BackUP and creates a new BackUP.
+// New Archive Area: Reads all entered data for a new BackUP and creates a new BackUP.
 void BORG_BackUP_GUI::on_Create_clicked(){
     QPixmap Lck1_Icon(PATH+"/images/locked.png");
     QIcon   Icon_Lck1(Lck1_Icon);
-    ui->New_Archiv->setIcon(Icon_Lck1);
-    ui->New_Archiv->setIconSize(Lck1_Icon.rect().size());
-    ui->New_Archiv->setIconSize(QSize(32, 32));
-    ui->New_Archiv->setStyleSheet("padding: 2 0 0 0;");
-    ui->New_Archiv->setStyleSheet("background:#770000; color:#FFFFFF;");
-    QString a = ui->new_Archiv_Path->text(),
-            b = ui->new_Archiv_Name->text(),
-            c =      ui->Archiv_Key->text();
+    ui->New_Archive->setIcon(Icon_Lck1);
+    ui->New_Archive->setIconSize(Lck1_Icon.rect().size());
+    ui->New_Archive->setIconSize(QSize(32, 32));
+    ui->New_Archive->setStyleSheet("padding: 2 0 0 0;");
+    ui->New_Archive->setStyleSheet("background:#770000; color:#FFFFFF;");
+    QString a = ui->new_Archive_Path->text(),
+            b = ui->new_Archive_Name->text(),
+            c =      ui->Archive_Key->text();
     setDisabled(true);
     QFile d(PATH + "/profiles/." + b + ".key");
     if(d.exists()){
@@ -3227,20 +3227,20 @@ void BORG_BackUP_GUI::on_Create_clicked(){
              "<b>The path to the key is:</b><BR>"+ PATH + "/profiles/." + b + ".key");
     }
     else{
-        if(ui->Archiv_Key->text()==""){
-            create_Archiv_Key_length();
+        if(ui->Archive_Key->text()==""){
+            create_Archive_Key_length();
         }
     }
-    QString e = ui->new_Archiv_Path->text() + "/" + ui->new_Archiv_Name->text(),
+    QString e = ui->new_Archive_Path->text() + "/" + ui->new_Archive_Name->text(),
             f = " --encryption=repokey";
-    if(ui->Archiv_Key->text()==""){
+    if(ui->Archive_Key->text()==""){
         f = " --encryption=keyfile";
     }
     QString g = BORG + " init " + e + f ;
     save_BackUP("init");
-    new_Borg_Archiv(g);
+    new_Borg_Archive(g);
     ui->progressBar_4->setEnabled(true);
-    if(ui->Archiv_Key->text()==""){
+    if(ui->Archive_Key->text()==""){
         QPixmap ci(PATH+"/images/logo.svg");
         QMessageBox sa;
                     sa.setWindowTitle("Watch your step...");
@@ -3277,14 +3277,14 @@ void BORG_BackUP_GUI::on_Create_clicked(){
             break;
         }
     }
-    ui->new_Archiv_Path->setText("");
-    ui->new_Archiv_Name->setText("");
-        ui->BackUP_Path->setEnabled(false);
-         ui->New_Archiv->setEnabled(true);
-         ui->Archiv_Key->setText("");
-    ui->Archiv_Key_File->setCurrentIndex(0);
-         ui->Archiv_Key->setDisabled(true);
-    ui->Archiv_Key_File->setDisabled(true);
+    ui->new_Archive_Path->setText("");
+    ui->new_Archive_Name->setText("");
+    ui->BackUP_Path->setEnabled(false);
+        ui->New_Archive->setEnabled(true);
+        ui->Archive_Key->setText("");
+         ui->Archive_Key_File->setCurrentIndex(0);
+         ui->Archive_Key->setDisabled(true);
+    ui->Archive_Key_File->setDisabled(true);
 }
 
 // Unlocking the Comment Manager
