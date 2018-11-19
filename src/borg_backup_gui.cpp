@@ -72,7 +72,7 @@
     update 14.11.2018 Create and read the comment for the snapshots
     update 15.11.2018 Extend the command line function
     update 16.11.2018 Management interface clip for the snapshot comments in the Config area
-    update 17.11.2018
+    update 19.11.2018 Fix spelling error: Archiv -> Archive  (a tip from https://github.com/NiseSlime)
 */
 
 #include "borg_backup_gui.h"
