@@ -1,3 +1,5 @@
 If you want to use BORG BackUP GUI with the Dark Style you should install QDarkStyleSheet.
 
 https://github.com/ColinDuquesnoy/QDarkStyleSheet
+
+!!! Don't forget to include QDarkStyleSheet in the BORG-BackUP-GUI.pro file !!!
