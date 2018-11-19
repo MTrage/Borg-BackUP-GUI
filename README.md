@@ -1,8 +1,10 @@
-<kbd>
+<kbd> 
+
 ## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new Snapshot.
+
 ### For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
 
-  
+
 ![NEW Snapshot](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Snapshot.gif)
 </kbd>
 ## BorgBackup (short: Borg) must of course be installed
@@ -11,6 +13,7 @@ https://www.borgbackup.org/
 
 ## For all those who already know Borg, the procedure is quite simple:
 <kbd>
+  
 ![NEW Archiv](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Archiv.gif)
 </kbd>
 
