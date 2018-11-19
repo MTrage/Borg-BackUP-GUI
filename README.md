@@ -1,6 +1,7 @@
+<kbd>
 ## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new Snapshot.
 ### For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
-<kbd>
+
   
 ![NEW Snapshot](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Snapshot.gif)
 </kbd>
@@ -9,16 +10,9 @@ Here you will find everything you need to know about Borg:
 https://www.borgbackup.org/
 
 ## For all those who already know Borg, the procedure is quite simple:
-Initiate a new Borg MAIN-BackUP, use an encryption with repokey.
 <kbd>
 ![NEW Archiv](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Archiv.gif)
 </kbd>
-
-Of course you can also do without client-side encryption, but if you have your BackUP on e.g. a cloud it is advisable to use it!
-
-All individual settings are made in the BackUP.sh file, this script is read by BORG BackUP GUI, therefore the names of the variables must not be changed.
-
-If you want to access an encrypted backup and don't always want to enter the password locally, you can start the Passphrase.sh. In this script you have to insert your passphrase.
 
 ## Instructions can be found here: [Instructions](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
 
