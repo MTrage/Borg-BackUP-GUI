@@ -1,6 +1,6 @@
 <kbd> 
 
-## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new Snapshot. 
+## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new snapshot. BORG BackUP GUI can also be used by new Borg users to get to their destination very quickly.
 
 ![NEW Snapshot](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Snapshot.gif)
 </kbd>
