@@ -9,9 +9,8 @@ https://www.borgbackup.org/
 
 ## For all those who already know Borg, the procedure is quite simple:
 Initiate a new Borg MAIN-BackUP, use an encryption with repokey. 
-This example assumes that you have already mounted your BackUP on a folder in your home directory.
+![NEW Archiv](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Archiv.gif)
 
-    borg init /home/USERNAME/BackUP_Path/BackUP_NAME –encryption=repokey
 
 Of course you can also do without client-side encryption, but if you have your BackUP on e.g. a cloud it is advisable to use it!
 
