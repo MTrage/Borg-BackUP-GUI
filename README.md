@@ -1,5 +1,7 @@
-Many Borg users know exactly what they are doing and only need this program to simply create or delete a new BackUP point. For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
+## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new BackUP point.
+### For all newcomers to Borg, it is advisable to first view a short manual or a video on the subject of Borg.
 <kbd>
+  
 ![NEW Snapshot](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Snapshot.gif)
 </kbd>
 ## BorgBackup (short: Borg) must of course be installed
