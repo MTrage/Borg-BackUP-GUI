@@ -7,8 +7,7 @@ TARGET = BORG-BackUP-GUI
 
 QT       += core gui widgets
 
-# May only be included if qdarkstyle is also present in the required directory.
-# RESOURCES += qdarkstyle/style.qrc
+RESOURCES +=
 
 TEMPLATE = app
 
