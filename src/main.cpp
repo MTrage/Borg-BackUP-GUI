@@ -122,7 +122,6 @@ int main(int argc, char *argv[]){
         qInfo("–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––\n"
               "    -h, --help       --> this Help Message\n"
               "    -v, --version    --> Version Information\n"
-              "    -d, --dark       --> start with DarkStyle\n"
               "    -o, --online     --> open the online Manuel\n"
               "    -p, --philosophy --> Philosophy and intention of the builder\n"
               "    -a, --available  --> calls \"df -HT\" and \"inxi -dc0\" in the system\n"
@@ -137,12 +136,6 @@ int main(int argc, char *argv[]){
               "    Copyright (C) 1.8.2018 - ∞ by Marc-André Tragé <mt@7vm.de>"
               "\n");
         return 0;
-    }
-    if(b=="-d" || b=="--dark"){
-        c = "1";
-    }
-    else{
-        c = "";
     }
     if(b=="-o" || b=="--online"){
         QString link = "https://github.com/MTrage/Borg-BackUP-GUI";
@@ -207,9 +200,6 @@ int main(int argc, char *argv[]){
         return 0;
     }
 
-    if(c=="1"){
-       qputenv("BORG_BackUP_GUI_Theme", "dark");
-    }
     BORG_BackUP_GUI d;
     d.show();
     return a.exec();

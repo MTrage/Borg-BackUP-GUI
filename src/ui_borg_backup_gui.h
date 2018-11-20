@@ -535,13 +535,7 @@ public:
         font6.setBold(false);
         font6.setWeight(50);
         textINFO->setFont(font6);
-        textINFO->setStyleSheet(QLatin1String("background:#ffffff;\n"
-"color: black;\n"
-"border-top:1px solid #000000;\n"
-"border-bottom:1px solid #cccccc;\n"
-"border-left:1px solid #000000;\n"
-"border-right:1px solid #cccccc;\n"
-""));
+        textINFO->setStyleSheet(QStringLiteral(""));
         textINFO->setReadOnly(true);
         html = new QPushButton(BackUP);
         html->setObjectName(QStringLiteral("html"));
@@ -676,7 +670,7 @@ public:
         Exclude_Caches->setEnabled(false);
         Exclude_Caches->setGeometry(QRect(520, 460, 150, 40));
         Exclude_Caches->setFont(font8);
-        Exclude_Caches->setStyleSheet(QStringLiteral("color:#000000;"));
+        Exclude_Caches->setStyleSheet(QStringLiteral(""));
         Unlocked = new QFrame(Selection);
         Unlocked->setObjectName(QStringLiteral("Unlocked"));
         Unlocked->setGeometry(QRect(-20, -700, 1020, 630));
@@ -699,7 +693,7 @@ public:
         Exclude_System->setEnabled(false);
         Exclude_System->setGeometry(QRect(680, 460, 140, 40));
         Exclude_System->setFont(font8);
-        Exclude_System->setStyleSheet(QStringLiteral("color:#000000;"));
+        Exclude_System->setStyleSheet(QStringLiteral(""));
         line_10 = new QFrame(Selection);
         line_10->setObjectName(QStringLiteral("line_10"));
         line_10->setGeometry(QRect(490, 10, 20, 540));
@@ -748,12 +742,7 @@ public:
         QFont font10;
         font10.setPointSize(12);
         Re_Check_Delete->setFont(font10);
-        Re_Check_Delete->setStyleSheet(QLatin1String("border-radius: 4px;\n"
-"border-top: 2px solid #000000;\n"
-"border-left: 2px solid #000000;\n"
-"border-bottom: 2px solid #FFFFFF;\n"
-"border-right: 2px solid #FFFFFF;\n"
-"background:#cccccc;"));
+        Re_Check_Delete->setStyleSheet(QStringLiteral(""));
         Re_Check_Delete->setAlignment(Qt::AlignCenter);
         label_4 = new QLabel(Delete);
         label_4->setObjectName(QStringLiteral("label_4"));
@@ -768,7 +757,7 @@ public:
         frame = new QFrame(Delete);
         frame->setObjectName(QStringLiteral("frame"));
         frame->setGeometry(QRect(320, 490, 670, 60));
-        frame->setStyleSheet(QStringLiteral("background:#777777;"));
+        frame->setStyleSheet(QStringLiteral(""));
         frame->setFrameShape(QFrame::WinPanel);
         frame->setFrameShadow(QFrame::Sunken);
         frame->setLineWidth(2);
@@ -894,6 +883,7 @@ public:
         textBrowser_9 = new QTextBrowser(Schedule);
         textBrowser_9->setObjectName(QStringLiteral("textBrowser_9"));
         textBrowser_9->setGeometry(QRect(0, 10, 970, 80));
+        textBrowser_9->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_9->setFrameShape(QFrame::NoFrame);
         textBrowser_9->setFrameShadow(QFrame::Raised);
         textBrowser_9->setLineWidth(0);
@@ -984,7 +974,7 @@ public:
         textBrowser_16 = new QTextBrowser(frame_IN_set_2);
         textBrowser_16->setObjectName(QStringLiteral("textBrowser_16"));
         textBrowser_16->setGeometry(QRect(10, 30, 290, 60));
-        textBrowser_16->setStyleSheet(QStringLiteral(""));
+        textBrowser_16->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_16->setFrameShape(QFrame::NoFrame);
         textBrowser_16->setFrameShadow(QFrame::Raised);
         textBrowser_16->setLineWidth(0);
@@ -1003,7 +993,7 @@ public:
         textBrowser_11 = new QTextBrowser(frame_IN_set_4);
         textBrowser_11->setObjectName(QStringLiteral("textBrowser_11"));
         textBrowser_11->setGeometry(QRect(350, 10, 300, 120));
-        textBrowser_11->setStyleSheet(QStringLiteral(""));
+        textBrowser_11->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_11->setFrameShape(QFrame::NoFrame);
         textBrowser_11->setFrameShadow(QFrame::Raised);
         textBrowser_11->setLineWidth(0);
@@ -1013,7 +1003,7 @@ public:
         textBrowser_10 = new QTextBrowser(frame_IN_set_4);
         textBrowser_10->setObjectName(QStringLiteral("textBrowser_10"));
         textBrowser_10->setGeometry(QRect(10, 10, 340, 120));
-        textBrowser_10->setStyleSheet(QStringLiteral(""));
+        textBrowser_10->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_10->setFrameShape(QFrame::NoFrame);
         textBrowser_10->setFrameShadow(QFrame::Raised);
         textBrowser_10->setLineWidth(0);
@@ -1034,25 +1024,13 @@ public:
         font14.setBold(true);
         font14.setWeight(75);
         label_25->setFont(font14);
-        label_25->setStyleSheet(QLatin1String("border-radius: 3px;\n"
-"border-top: 1px solid #000000;\n"
-"border-left: 1px solid #000000;\n"
-"border-bottom: 1px solid #FFFFFF;\n"
-"border-right: 1px solid #FFFFFF;\n"
-"background: #CCCCCC;\n"
-"color:#000000;"));
+        label_25->setStyleSheet(QStringLiteral(""));
         label_25->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         label_26 = new QLabel(frame_IN_set_4);
         label_26->setObjectName(QStringLiteral("label_26"));
         label_26->setGeometry(QRect(10, 140, 150, 40));
         label_26->setFont(font14);
-        label_26->setStyleSheet(QLatin1String("border-radius: 3px;\n"
-"border-top: 1px solid #000000;\n"
-"border-left: 1px solid #000000;\n"
-"border-bottom: 1px solid #FFFFFF;\n"
-"border-right: 1px solid #FFFFFF;\n"
-"background: #CCCCCC;\n"
-"color:#000000;"));
+        label_26->setStyleSheet(QStringLiteral(""));
         label_26->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         avaiable_File_Managers = new QComboBox(frame_IN_set_4);
         avaiable_File_Managers->setObjectName(QStringLiteral("avaiable_File_Managers"));
@@ -1064,12 +1042,7 @@ public:
         pathInfo_4->setEnabled(false);
         pathInfo_4->setGeometry(QRect(170, 140, 370, 40));
         pathInfo_4->setFont(font4);
-        pathInfo_4->setStyleSheet(QLatin1String("color:#555555;\n"
-"border-radius: 4px;\n"
-"border-width:2px;\n"
-"border-style:ridge;\n"
-"border-color:#888888;\n"
-"background:#cccccc;"));
+        pathInfo_4->setStyleSheet(QStringLiteral(""));
         pathInfo_4->setReadOnly(true);
         Open_Mount_Folder = new QPushButton(frame_IN_set_4);
         Open_Mount_Folder->setObjectName(QStringLiteral("Open_Mount_Folder"));
@@ -1157,7 +1130,7 @@ public:
         textBrowser_12 = new QTextBrowser(frame_IN_set_5);
         textBrowser_12->setObjectName(QStringLiteral("textBrowser_12"));
         textBrowser_12->setGeometry(QRect(10, 150, 640, 70));
-        textBrowser_12->setStyleSheet(QStringLiteral(""));
+        textBrowser_12->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_12->setFrameShape(QFrame::NoFrame);
         textBrowser_12->setFrameShadow(QFrame::Raised);
         textBrowser_12->setLineWidth(0);
@@ -1167,7 +1140,7 @@ public:
         textBrowser_5 = new QTextBrowser(frame_IN_set_5);
         textBrowser_5->setObjectName(QStringLiteral("textBrowser_5"));
         textBrowser_5->setGeometry(QRect(10, 10, 640, 130));
-        textBrowser_5->setStyleSheet(QStringLiteral(""));
+        textBrowser_5->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_5->setFrameShape(QFrame::NoFrame);
         textBrowser_5->setFrameShadow(QFrame::Raised);
         textBrowser_5->setLineWidth(0);
@@ -1228,24 +1201,14 @@ public:
         new_Archive_Name->setEnabled(false);
         new_Archive_Name->setGeometry(QRect(610, 230, 380, 40));
         new_Archive_Name->setFont(font4);
-        new_Archive_Name->setStyleSheet(QLatin1String("border-radius: 4px;\n"
-"border-top: 2px solid #000000;\n"
-"border-left: 2px solid #000000;\n"
-"border-bottom: 2px solid #FFFFFF;\n"
-"border-right: 2px solid #FFFFFF;\n"
-"background:#cccccc;"));
+        new_Archive_Name->setStyleSheet(QStringLiteral(""));
         new_Archive_Name->setReadOnly(false);
         Archive_Key = new QLineEdit(NewArchiv);
         Archive_Key->setObjectName(QStringLiteral("Archive_Key"));
         Archive_Key->setEnabled(false);
         Archive_Key->setGeometry(QRect(10, 410, 690, 40));
         Archive_Key->setFont(font4);
-        Archive_Key->setStyleSheet(QLatin1String("border-radius: 4px;\n"
-"border-top: 2px solid #000000;\n"
-"border-left: 2px solid #000000;\n"
-"border-bottom: 2px solid #FFFFFF;\n"
-"border-right: 2px solid #FFFFFF;\n"
-"background:#cccccc;"));
+        Archive_Key->setStyleSheet(QStringLiteral(""));
         Archive_Key->setReadOnly(false);
         label_19 = new QLabel(NewArchiv);
         label_19->setObjectName(QStringLiteral("label_19"));
@@ -1275,16 +1238,12 @@ public:
         new_Archive_Path->setEnabled(false);
         new_Archive_Path->setGeometry(QRect(240, 230, 360, 40));
         new_Archive_Path->setFont(font4);
-        new_Archive_Path->setStyleSheet(QLatin1String("color:#555555;\n"
-"border-radius: 4px;\n"
-"border-width:2px;\n"
-"border-style:ridge;\n"
-"border-color:#888888;\n"
-"background:#cccccc;"));
+        new_Archive_Path->setStyleSheet(QStringLiteral(""));
         new_Archive_Path->setReadOnly(true);
         textBrowser_6 = new QTextBrowser(NewArchiv);
         textBrowser_6->setObjectName(QStringLiteral("textBrowser_6"));
         textBrowser_6->setGeometry(QRect(0, 10, 970, 150));
+        textBrowser_6->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_6->setFrameShape(QFrame::NoFrame);
         textBrowser_6->setFrameShadow(QFrame::Raised);
         textBrowser_6->setLineWidth(0);
@@ -1319,6 +1278,7 @@ public:
         textBrowser_7 = new QTextBrowser(NewArchiv);
         textBrowser_7->setObjectName(QStringLiteral("textBrowser_7"));
         textBrowser_7->setGeometry(QRect(0, 310, 970, 70));
+        textBrowser_7->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_7->setFrameShape(QFrame::NoFrame);
         textBrowser_7->setFrameShadow(QFrame::Raised);
         textBrowser_7->setLineWidth(0);
@@ -1328,6 +1288,7 @@ public:
         textBrowser_8 = new QTextBrowser(NewArchiv);
         textBrowser_8->setObjectName(QStringLiteral("textBrowser_8"));
         textBrowser_8->setGeometry(QRect(10, 470, 560, 80));
+        textBrowser_8->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_8->setFrameShape(QFrame::NoFrame);
         textBrowser_8->setFrameShadow(QFrame::Raised);
         textBrowser_8->setLineWidth(0);
@@ -1364,6 +1325,7 @@ public:
         textBrowser_13 = new QTextBrowser(Help);
         textBrowser_13->setObjectName(QStringLiteral("textBrowser_13"));
         textBrowser_13->setGeometry(QRect(110, 10, 860, 100));
+        textBrowser_13->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_13->setFrameShape(QFrame::NoFrame);
         textBrowser_13->setFrameShadow(QFrame::Raised);
         textBrowser_13->setLineWidth(0);
@@ -1373,6 +1335,7 @@ public:
         textBrowser_14 = new QTextBrowser(Help);
         textBrowser_14->setObjectName(QStringLiteral("textBrowser_14"));
         textBrowser_14->setGeometry(QRect(0, 330, 980, 220));
+        textBrowser_14->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_14->setFrameShape(QFrame::NoFrame);
         textBrowser_14->setFrameShadow(QFrame::Raised);
         textBrowser_14->setLineWidth(0);
@@ -1396,6 +1359,7 @@ public:
         textBrowser_15 = new QTextBrowser(Help);
         textBrowser_15->setObjectName(QStringLiteral("textBrowser_15"));
         textBrowser_15->setGeometry(QRect(10, 130, 970, 170));
+        textBrowser_15->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_15->setFrameShape(QFrame::NoFrame);
         textBrowser_15->setFrameShadow(QFrame::Raised);
         textBrowser_15->setLineWidth(0);
@@ -1764,8 +1728,8 @@ public:
         textBrowser_9->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai';\">Create a schedule for an automatic Snapshot.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">Select automatic BackUPs at certain times of the day.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:12pt; font-weight:600;\">Create a schedule for an automatic Snapshot.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:12pt;\">Select automatic BackUPs at certain times of the day.</span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Schedule), QApplication::translate("BORG_BackUP_GUI", "&Timer", nullptr));
         label_28->setText(QApplication::translate("BORG_BackUP_GUI", "Snapshot Comments", nullptr));
         Remove_Comment->setText(QApplication::translate("BORG_BackUP_GUI", "Remove", nullptr));
@@ -1778,18 +1742,18 @@ public:
         textBrowser_16->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">All profiles and configurations can be exported.</p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:400;\">All profiles and configurations can be exported.</span></p></body></html>", nullptr));
         textBrowser_11->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:600;\">Mount Folder<br /></span><span style=\" font-family:'Droid Sans Thai';\">To be able to mount a BackUP, a mount folder must be selected.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">Mount Folder<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">To be able to mount a BackUP, a mount folder must be selected.</span></p></body></html>", nullptr));
         textBrowser_10->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:600;\">File Manager<br /></span><span style=\" font-family:'Droid Sans Thai';\">Your system has been searched for the most common file managers, please select one.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">File Manager<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Your system has been searched for the most common file managers, please select one.</span></p></body></html>", nullptr));
 #ifndef QT_NO_TOOLTIP
         Change_2->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
@@ -1842,15 +1806,15 @@ public:
         textBrowser_12->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai';\">Compression: [</span><span style=\" font-family:'Droid Sans Thai'; font-weight:600;\">lz4</span><span style=\" font-family:'Droid Sans Thai';\">]</span><span style=\" font-family:'Droid Sans Thai'; font-weight:600;\">   </span><span style=\" font-family:'Droid Sans Thai';\">Heuristic: [</span><span style=\" font-family:'Droid Sans Thai'; font-weight:600;\">auto</span><span style=\" font-family:'Droid Sans Thai';\">]   Status: [</span><span style=\" font-family:'Droid Sans Thai'; font-weight:600;\""
-                        ">off</span><span style=\" font-family:'Droid Sans Thai';\">]<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:9pt; font-style:italic;\">You can also change compressions for your snapshots afterwards.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Compression: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">lz4</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">]</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">   </span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Heuristic: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">auto</span><span style=\" font-family:'Droid S"
+                        "ans Thai'; font-size:10pt; font-weight:400;\">]   Status: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">off</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">]<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:9pt; font-weight:400; font-style:italic;\">You can also change compressions for your snapshots afterwards.</span></p></body></html>", nullptr));
         textBrowser_5->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:12pt; font-weight:600;\">Compression</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai';\">Different compressions can be selected, which is best for your backup as well as the backup medium and the respective connection to it, can vary greatly. </span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai';\">Compression</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Different compressions can be selected, which is best for your backup as well as the backup medium and the respective connection to it, can vary greatly. </span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Config), QApplication::translate("BORG_BackUP_GUI", "&Config", nullptr));
         label_18->setText(QApplication::translate("BORG_BackUP_GUI", "BackUP Name", nullptr));
         label_17->setText(QApplication::translate("BORG_BackUP_GUI", "BackUP Storage Path", nullptr));

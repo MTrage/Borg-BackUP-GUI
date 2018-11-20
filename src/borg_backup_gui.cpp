@@ -73,6 +73,7 @@
     update 15.11.2018 Extend the command line function
     update 16.11.2018 Management interface clip for the snapshot comments in the Config area
     update 19.11.2018 Fix spelling error: Archiv -> Archive  (a tip from https://github.com/NiseSlime)
+    update 19.11.2018 Removing QDarkStylesheet – Complete conversion to Qt5 Style interface
 */
 
 #include "borg_backup_gui.h"
@@ -736,18 +737,6 @@ void BORG_BackUP_GUI::Info_List(){
              ui->DELETE->setEnabled(false);
 }
 
-// --- QDarkStylesheet ---------------------------------------
-void BORG_BackUP_GUI::QDarkStylesheet(){
-    QString BORG_BackUP_GUI_Theme_Dark = qgetenv("BORG_BackUP_GUI_Theme");
-    if(BORG_BackUP_GUI_Theme_Dark=="dark"){
-        QFile style(PATH + "/qdarkstyle/style.qss");
-        if (style.exists()){
-            style.open(QFile::ReadOnly | QFile::Text);
-            QTextStream ts(&style);
-            qApp->setStyleSheet(ts.readAll());
-        }
-    }
-}
 
 // Showing and hiding the BORG BackUP GUI via the SystemTrayIcon menu.
 void BORG_BackUP_GUI::Show_Hide(){
@@ -1257,7 +1246,6 @@ void BORG_BackUP_GUI::read_all_Profiles(){
 // ––– Initializing the UI of BORG BackUP GUI ––––––––––––––––
 BORG_BackUP_GUI::BORG_BackUP_GUI(QWidget *parent) : QMainWindow(parent),ui(new Ui::BORG_BackUP_GUI){
     PATH = QCoreApplication::applicationDirPath();
-    QDarkStylesheet(); // Call QDarkStylesheet, for a nice dark theme.
       ui->setupUi(this);
     this->setFixedSize(1000, 620);
     this->setWindowFlags(Qt::CustomizeWindowHint | Qt::WindowCloseButtonHint);

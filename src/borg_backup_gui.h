@@ -41,7 +41,6 @@ private slots:
     QString ask(QString x,QString y,QString z);
 
     void Main_Window();
-    void QDarkStylesheet();
     void SystemTrayIcon(QString a);
     void EXIT();
 
