@@ -143,13 +143,9 @@ private slots:
     void on_BackUP_Path_clicked();
     void on_new_Archive_Path_textChanged(const QString &arg1);
     void on_new_Archive_Name_textChanged(const QString &arg1);
-
     void on_Change_3_clicked();
-
     void on_Remove_Comment_clicked();
-
     void on_Snapshot_Comments_currentRowChanged(int a);
-
     void on_Export_Config_clicked();
 
 private:

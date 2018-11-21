@@ -1,4 +1,5 @@
-## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new snapshot. BORG BackUP GUI can also be used by new Borg users to get to their destination very quickly.
+## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new snapshot.
+### BORG BackUP GUI can also be used by new Borg users to get to their destination very quickly.
 
 <kbd>  
   
@@ -18,8 +19,7 @@ https://www.borgbackup.org/
 </kbd>
 
 
-
-
+# Conversion to the free selection of Qt5 themes.
 ![Qt5 Style](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/Qt5-Style-min.gif)
 
 
