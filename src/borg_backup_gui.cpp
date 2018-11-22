@@ -198,7 +198,6 @@ static int Compression_values_Deduplicated,
          run_once_Cron_all_BackUPs_OUT = 0,
               run_later_Build_Dir_File = 0,
                 run_once_read_Dir_File = 0,
-// [inactive] ––– run_once_Main_Window = 0,
                      run_once_TrayMenu = 0,
                        run_once_Worker = 0,
 // END –––––––––––––––––––––––––––––––––––
