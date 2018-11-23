@@ -40,6 +40,10 @@ If you just want to have a quick look at "BORG BackUP GUI" and start the /bin/BO
     chmod +x ~/Borg-BackUP-GUI/BORG-BackUP-GUI
 
 
+## Mount problems?    
+The GUI always uses the mount folder during the initial setup. This can be found in ~/Borg-BackUP-GUI/src/mount so that it is present on Github a blank file is needed e.g. ".gitkeep" this file should be deleted in the folder when using this folder.
+For e.g. Ubuntu and its derivatives it may be necessary to install the following:
+    sudo apt install python3-llfuse
 
 ## Instructions can be found here: [Instructions](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
 
