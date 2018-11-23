@@ -26,6 +26,11 @@ https://www.borgbackup.org/
 
 
 ## For the creation of Borg BackUP GUI (++ the required packages).
+Change to the src directory with :
+
+    cd ~/BORG-BackUP-GUI/src/
+
+Create the GUI with it:
 
     qmake && make
     
