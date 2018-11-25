@@ -18,3 +18,19 @@ build-BORG-BackUP-GUI-Desktop-Debug/moc_borg_backup_gui\.o
 build-BORG-BackUP-GUI-Desktop-Debug/moc_predefs\.h
 
 build-BORG-BackUP-GUI-Desktop-Debug/ui_borg_backup_gui\.h
+
+src/BORG-BackUP-GUI
+
+src/\.qmake\.stash
+
+src/borg_backup_gui\.o
+
+src/main\.o
+
+src/Makefile
+
+src/moc_borg_backup_gui\.cpp
+
+src/moc_borg_backup_gui\.o
+
+src/moc_predefs\.h

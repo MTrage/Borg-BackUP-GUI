@@ -272,7 +272,7 @@ public:
         tabWidget->setEnabled(true);
         tabWidget->setGeometry(QRect(0, 10, 1000, 610));
         QFont font;
-        font.setPointSize(12);
+        font.setPointSize(16);
         font.setBold(true);
         font.setWeight(75);
         tabWidget->setFont(font);
@@ -284,7 +284,11 @@ public:
         progressBar_2 = new QProgressBar(BackUP);
         progressBar_2->setObjectName(QStringLiteral("progressBar_2"));
         progressBar_2->setGeometry(QRect(10, 55, 980, 50));
-        progressBar_2->setFont(font);
+        QFont font1;
+        font1.setPointSize(20);
+        font1.setBold(true);
+        font1.setWeight(75);
+        progressBar_2->setFont(font1);
         progressBar_2->setLayoutDirection(Qt::LeftToRight);
         progressBar_2->setStyleSheet(QLatin1String("QProgressBar {\n"
 "background: #330000;\n"
@@ -303,11 +307,7 @@ public:
         label_3 = new QLabel(BackUP);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(20, 104, 190, 50));
-        QFont font1;
-        font1.setPointSize(10);
-        font1.setBold(false);
-        font1.setWeight(50);
-        label_3->setFont(font1);
+        label_3->setFont(font);
         label_3->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_3->setLineWidth(0);
@@ -317,7 +317,7 @@ public:
         Info->setGeometry(QRect(210, 6, 130, 50));
         QFont font2;
         font2.setFamily(QStringLiteral("Droid Sans Thai"));
-        font2.setPointSize(10);
+        font2.setPointSize(16);
         font2.setBold(true);
         font2.setWeight(75);
         Info->setFont(font2);
@@ -343,9 +343,9 @@ public:
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 6, 190, 50));
         QFont font3;
-        font3.setPointSize(10);
-        font3.setBold(false);
-        font3.setWeight(50);
+        font3.setPointSize(16);
+        font3.setBold(true);
+        font3.setWeight(75);
         font3.setKerning(true);
         label->setFont(font3);
         label->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
@@ -358,7 +358,7 @@ public:
         progressBar = new QProgressBar(BackUP);
         progressBar->setObjectName(QStringLiteral("progressBar"));
         progressBar->setGeometry(QRect(10, 6, 980, 50));
-        progressBar->setFont(font);
+        progressBar->setFont(font1);
         progressBar->setStyleSheet(QLatin1String("QProgressBar {\n"
 "background: #003300;\n"
 "padding: 2px;\n"
@@ -377,7 +377,7 @@ public:
         progressBar_3 = new QProgressBar(BackUP);
         progressBar_3->setObjectName(QStringLiteral("progressBar_3"));
         progressBar_3->setGeometry(QRect(10, 104, 980, 50));
-        progressBar_3->setFont(font);
+        progressBar_3->setFont(font1);
         progressBar_3->setStyleSheet(QLatin1String("QProgressBar {\n"
 "background: #03224c;\n"
 "padding: 2px;\n"
@@ -402,7 +402,7 @@ public:
         label_2 = new QLabel(BackUP);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(20, 55, 190, 50));
-        label_2->setFont(font1);
+        label_2->setFont(font);
         label_2->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_2->setLineWidth(0);
@@ -435,7 +435,7 @@ public:
         label_9 = new QLabel(BackUP);
         label_9->setObjectName(QStringLiteral("label_9"));
         label_9->setGeometry(QRect(660, 55, 170, 50));
-        label_9->setFont(font1);
+        label_9->setFont(font);
         label_9->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_9->setLineWidth(0);
@@ -451,7 +451,7 @@ public:
         label_10 = new QLabel(BackUP);
         label_10->setObjectName(QStringLiteral("label_10"));
         label_10->setGeometry(QRect(660, 104, 170, 50));
-        label_10->setFont(font1);
+        label_10->setFont(font);
         label_10->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_10->setLineWidth(0);
@@ -459,7 +459,7 @@ public:
         label_11 = new QLabel(BackUP);
         label_11->setObjectName(QStringLiteral("label_11"));
         label_11->setGeometry(QRect(660, 6, 170, 50));
-        label_11->setFont(font1);
+        label_11->setFont(font);
         label_11->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_11->setLineWidth(0);
@@ -475,11 +475,7 @@ public:
         label_12 = new QLabel(BackUP);
         label_12->setObjectName(QStringLiteral("label_12"));
         label_12->setGeometry(QRect(20, 164, 180, 30));
-        QFont font4;
-        font4.setPointSize(10);
-        font4.setBold(true);
-        font4.setWeight(75);
-        label_12->setFont(font4);
+        label_12->setFont(font);
         label_12->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_12->setLineWidth(0);
@@ -487,12 +483,12 @@ public:
         Info_8 = new QLabel(BackUP);
         Info_8->setObjectName(QStringLiteral("Info_8"));
         Info_8->setGeometry(QRect(210, 164, 740, 30));
-        QFont font5;
-        font5.setFamily(QStringLiteral("Droid Sans Thai"));
-        font5.setPointSize(10);
-        font5.setBold(false);
-        font5.setWeight(50);
-        Info_8->setFont(font5);
+        QFont font4;
+        font4.setFamily(QStringLiteral("Droid Sans Thai"));
+        font4.setPointSize(16);
+        font4.setBold(false);
+        font4.setWeight(50);
+        Info_8->setFont(font4);
         Info_8->setLayoutDirection(Qt::RightToLeft);
         Info_8->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
@@ -500,7 +496,7 @@ public:
         Info_7 = new QLabel(BackUP);
         Info_7->setObjectName(QStringLiteral("Info_7"));
         Info_7->setGeometry(QRect(210, 190, 740, 30));
-        Info_7->setFont(font5);
+        Info_7->setFont(font4);
         Info_7->setLayoutDirection(Qt::RightToLeft);
         Info_7->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
@@ -508,7 +504,7 @@ public:
         label_13 = new QLabel(BackUP);
         label_13->setObjectName(QStringLiteral("label_13"));
         label_13->setGeometry(QRect(20, 190, 180, 30));
-        label_13->setFont(font4);
+        label_13->setFont(font);
         label_13->setStyleSheet(QLatin1String("color: rgb(255,255,255);\n"
 "background:rgba(0,0,0,0);"));
         label_13->setLineWidth(0);
@@ -528,13 +524,13 @@ public:
 "}"));
         textINFO = new QTextEdit(BackUP);
         textINFO->setObjectName(QStringLiteral("textINFO"));
-        textINFO->setGeometry(QRect(10, 280, 980, 270));
-        QFont font6;
-        font6.setFamily(QStringLiteral("Monospace"));
-        font6.setPointSize(10);
-        font6.setBold(false);
-        font6.setWeight(50);
-        textINFO->setFont(font6);
+        textINFO->setGeometry(QRect(10, 280, 980, 280));
+        QFont font5;
+        font5.setFamily(QStringLiteral("Monospace"));
+        font5.setPointSize(16);
+        font5.setBold(false);
+        font5.setWeight(50);
+        textINFO->setFont(font5);
         textINFO->setStyleSheet(QStringLiteral(""));
         textINFO->setReadOnly(true);
         html = new QPushButton(BackUP);
@@ -544,11 +540,11 @@ public:
         Mount_Info = new QLabel(BackUP);
         Mount_Info->setObjectName(QStringLiteral("Mount_Info"));
         Mount_Info->setGeometry(QRect(-20, -300, 1020, 280));
-        QFont font7;
-        font7.setPointSize(15);
-        font7.setBold(true);
-        font7.setWeight(75);
-        Mount_Info->setFont(font7);
+        QFont font6;
+        font6.setPointSize(15);
+        font6.setBold(true);
+        font6.setWeight(75);
+        Mount_Info->setFont(font6);
         Mount_Info->setStyleSheet(QLatin1String("QLabel {\n"
 "padding: 2px;\n"
 "text-align: center;\n"
@@ -592,50 +588,54 @@ public:
         listWidget_in->setObjectName(QStringLiteral("listWidget_in"));
         listWidget_in->setEnabled(false);
         listWidget_in->setGeometry(QRect(10, 50, 480, 450));
-        QFont font8;
-        font8.setBold(false);
-        font8.setWeight(50);
-        listWidget_in->setFont(font8);
+        QFont font7;
+        font7.setBold(false);
+        font7.setWeight(50);
+        listWidget_in->setFont(font7);
         listWidget_out = new QListWidget(Selection);
         listWidget_out->setObjectName(QStringLiteral("listWidget_out"));
         listWidget_out->setEnabled(false);
         listWidget_out->setGeometry(QRect(510, 50, 480, 400));
-        listWidget_out->setFont(font8);
+        listWidget_out->setFont(font7);
         Save = new QPushButton(Selection);
         Save->setObjectName(QStringLiteral("Save"));
         Save->setEnabled(false);
         Save->setGeometry(QRect(840, 510, 150, 40));
-        Save->setFont(font4);
+        Save->setFont(font);
         Remove_OUT = new QPushButton(Selection);
         Remove_OUT->setObjectName(QStringLiteral("Remove_OUT"));
         Remove_OUT->setEnabled(false);
         Remove_OUT->setGeometry(QRect(840, 460, 150, 40));
-        Remove_OUT->setFont(font1);
+        QFont font8;
+        font8.setPointSize(16);
+        font8.setBold(false);
+        font8.setWeight(50);
+        Remove_OUT->setFont(font8);
         Add_File_OUT = new QPushButton(Selection);
         Add_File_OUT->setObjectName(QStringLiteral("Add_File_OUT"));
         Add_File_OUT->setEnabled(false);
         Add_File_OUT->setGeometry(QRect(670, 510, 160, 40));
-        Add_File_OUT->setFont(font1);
+        Add_File_OUT->setFont(font8);
         Add_Dir_OUT = new QPushButton(Selection);
         Add_Dir_OUT->setObjectName(QStringLiteral("Add_Dir_OUT"));
         Add_Dir_OUT->setEnabled(false);
         Add_Dir_OUT->setGeometry(QRect(510, 510, 150, 40));
-        Add_Dir_OUT->setFont(font1);
+        Add_Dir_OUT->setFont(font8);
         Add_File_IN = new QPushButton(Selection);
         Add_File_IN->setObjectName(QStringLiteral("Add_File_IN"));
         Add_File_IN->setEnabled(false);
         Add_File_IN->setGeometry(QRect(170, 510, 160, 40));
-        Add_File_IN->setFont(font1);
+        Add_File_IN->setFont(font8);
         Add_Dir_IN = new QPushButton(Selection);
         Add_Dir_IN->setObjectName(QStringLiteral("Add_Dir_IN"));
         Add_Dir_IN->setEnabled(false);
         Add_Dir_IN->setGeometry(QRect(10, 510, 150, 40));
-        Add_Dir_IN->setFont(font1);
+        Add_Dir_IN->setFont(font8);
         Remove_IN = new QPushButton(Selection);
         Remove_IN->setObjectName(QStringLiteral("Remove_IN"));
         Remove_IN->setEnabled(false);
         Remove_IN->setGeometry(QRect(340, 510, 150, 40));
-        Remove_IN->setFont(font1);
+        Remove_IN->setFont(font8);
         pathInfo_7 = new QLabel(Selection);
         pathInfo_7->setObjectName(QStringLiteral("pathInfo_7"));
         pathInfo_7->setEnabled(false);
@@ -722,14 +722,14 @@ public:
         Delete_List = new QListWidget(Delete);
         Delete_List->setObjectName(QStringLiteral("Delete_List"));
         Delete_List->setGeometry(QRect(10, 10, 300, 540));
-        Delete_List->setFont(font6);
+        Delete_List->setFont(font5);
         Delete_List->setStyleSheet(QStringLiteral(""));
         Delete_List->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         DELETE = new QPushButton(Delete);
         DELETE->setObjectName(QStringLiteral("DELETE"));
         DELETE->setEnabled(false);
         DELETE->setGeometry(QRect(820, 500, 160, 40));
-        DELETE->setFont(font4);
+        DELETE->setFont(font);
         Check_Delete = new QLabel(Delete);
         Check_Delete->setObjectName(QStringLiteral("Check_Delete"));
         Check_Delete->setGeometry(QRect(570, 500, 120, 40));
@@ -740,18 +740,14 @@ public:
         Re_Check_Delete->setObjectName(QStringLiteral("Re_Check_Delete"));
         Re_Check_Delete->setGeometry(QRect(690, 500, 120, 40));
         QFont font10;
-        font10.setPointSize(12);
+        font10.setPointSize(16);
         Re_Check_Delete->setFont(font10);
         Re_Check_Delete->setStyleSheet(QStringLiteral(""));
         Re_Check_Delete->setAlignment(Qt::AlignCenter);
         label_4 = new QLabel(Delete);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setGeometry(QRect(340, 500, 270, 40));
-        QFont font11;
-        font11.setPointSize(14);
-        font11.setBold(true);
-        font11.setWeight(75);
-        label_4->setFont(font11);
+        label_4->setFont(font);
         label_4->setStyleSheet(QStringLiteral("color:#ffffff;"));
         label_4->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         frame = new QFrame(Delete);
@@ -764,7 +760,12 @@ public:
         Delete_Info_Details = new QTextEdit(Delete);
         Delete_Info_Details->setObjectName(QStringLiteral("Delete_Info_Details"));
         Delete_Info_Details->setGeometry(QRect(320, 10, 670, 470));
-        Delete_Info_Details->setFont(font6);
+        QFont font11;
+        font11.setFamily(QStringLiteral("Monospace"));
+        font11.setPointSize(10);
+        font11.setBold(false);
+        font11.setWeight(50);
+        Delete_Info_Details->setFont(font11);
         Delete_Info_Details->setStyleSheet(QStringLiteral(""));
         Delete_Info_Details->setReadOnly(true);
         tabWidget->addTab(Delete, QString());
@@ -826,11 +827,15 @@ public:
         label_5 = new QLabel(Schedule);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setGeometry(QRect(10, 90, 180, 30));
-        label_5->setFont(font);
+        QFont font13;
+        font13.setPointSize(12);
+        font13.setBold(true);
+        font13.setWeight(75);
+        label_5->setFont(font13);
         label_6 = new QLabel(Schedule);
         label_6->setObjectName(QStringLiteral("label_6"));
         label_6->setGeometry(QRect(800, 90, 90, 34));
-        label_6->setFont(font);
+        label_6->setFont(font13);
         line_4 = new QFrame(Schedule);
         line_4->setObjectName(QStringLiteral("line_4"));
         line_4->setGeometry(QRect(-40, 130, 1030, 4));
@@ -842,12 +847,12 @@ public:
         Remove->setObjectName(QStringLiteral("Remove"));
         Remove->setEnabled(false);
         Remove->setGeometry(QRect(10, 510, 480, 40));
-        Remove->setFont(font1);
+        Remove->setFont(font8);
         AddChange = new QPushButton(Schedule);
         AddChange->setObjectName(QStringLiteral("AddChange"));
         AddChange->setEnabled(false);
         AddChange->setGeometry(QRect(510, 510, 480, 40));
-        AddChange->setFont(font1);
+        AddChange->setFont(font8);
         mm = new QTimeEdit(Schedule);
         mm->setObjectName(QStringLiteral("mm"));
         mm->setEnabled(false);
@@ -857,21 +862,25 @@ public:
         all_BackUPs->setObjectName(QStringLiteral("all_BackUPs"));
         all_BackUPs->setEnabled(false);
         all_BackUPs->setGeometry(QRect(10, 210, 480, 290));
-        all_BackUPs->setFont(font8);
+        all_BackUPs->setFont(font7);
         all_BackUPs_cron_job = new QListWidget(Schedule);
         all_BackUPs_cron_job->setObjectName(QStringLiteral("all_BackUPs_cron_job"));
         all_BackUPs_cron_job->setEnabled(false);
         all_BackUPs_cron_job->setGeometry(QRect(510, 210, 480, 290));
-        all_BackUPs_cron_job->setFont(font8);
+        all_BackUPs_cron_job->setFont(font7);
         label_15 = new QLabel(Schedule);
         label_15->setObjectName(QStringLiteral("label_15"));
         label_15->setGeometry(QRect(10, 170, 480, 40));
-        label_15->setFont(font);
+        QFont font14;
+        font14.setPointSize(18);
+        font14.setBold(true);
+        font14.setWeight(75);
+        label_15->setFont(font14);
         label_15->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         label_16 = new QLabel(Schedule);
         label_16->setObjectName(QStringLiteral("label_16"));
         label_16->setGeometry(QRect(510, 170, 480, 40));
-        label_16->setFont(font);
+        label_16->setFont(font14);
         label_16->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         line_5 = new QFrame(Schedule);
         line_5->setObjectName(QStringLiteral("line_5"));
@@ -883,6 +892,9 @@ public:
         textBrowser_9 = new QTextBrowser(Schedule);
         textBrowser_9->setObjectName(QStringLiteral("textBrowser_9"));
         textBrowser_9->setGeometry(QRect(0, 10, 970, 80));
+        QFont font15;
+        font15.setPointSize(12);
+        textBrowser_9->setFont(font15);
         textBrowser_9->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_9->setFrameShape(QFrame::NoFrame);
         textBrowser_9->setFrameShadow(QFrame::Raised);
@@ -917,16 +929,16 @@ public:
         test_Pack->setObjectName(QStringLiteral("test_Pack"));
         test_Pack->setEnabled(false);
         test_Pack->setGeometry(QRect(310, -250, 270, 40));
-        QFont font13;
-        font13.setPointSize(8);
-        test_Pack->setFont(font13);
+        QFont font16;
+        font16.setPointSize(8);
+        test_Pack->setFont(font16);
         test_Pack->setStyleSheet(QStringLiteral(""));
         test_Pack->setReadOnly(true);
         Snapshot_Comments = new QListWidget(Config);
         Snapshot_Comments->setObjectName(QStringLiteral("Snapshot_Comments"));
         Snapshot_Comments->setEnabled(false);
         Snapshot_Comments->setGeometry(QRect(690, 100, 290, 240));
-        Snapshot_Comments->setFont(font6);
+        Snapshot_Comments->setFont(font5);
         Snapshot_Comments->setStyleSheet(QStringLiteral(""));
         Snapshot_Comments->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         label_28 = new QLabel(Config);
@@ -939,13 +951,13 @@ public:
         Remove_Comment->setObjectName(QStringLiteral("Remove_Comment"));
         Remove_Comment->setEnabled(false);
         Remove_Comment->setGeometry(QRect(690, 350, 290, 40));
-        Remove_Comment->setFont(font4);
+        Remove_Comment->setFont(font);
         Remove_Comment->setStyleSheet(QStringLiteral(""));
         Change_3 = new QPushButton(Config);
         Change_3->setObjectName(QStringLiteral("Change_3"));
         Change_3->setEnabled(true);
         Change_3->setGeometry(QRect(690, 50, 290, 40));
-        Change_3->setFont(font1);
+        Change_3->setFont(font8);
         Change_3->setStyleSheet(QStringLiteral(""));
         frame_IN_set = new QFrame(Config);
         frame_IN_set->setObjectName(QStringLiteral("frame_IN_set"));
@@ -963,7 +975,7 @@ public:
         Export_Config->setObjectName(QStringLiteral("Export_Config"));
         Export_Config->setEnabled(true);
         Export_Config->setGeometry(QRect(10, 90, 290, 40));
-        Export_Config->setFont(font4);
+        Export_Config->setFont(font);
         Export_Config->setStyleSheet(QStringLiteral(""));
         label_29 = new QLabel(frame_IN_set_2);
         label_29->setObjectName(QStringLiteral("label_29"));
@@ -974,6 +986,7 @@ public:
         textBrowser_16 = new QTextBrowser(frame_IN_set_2);
         textBrowser_16->setObjectName(QStringLiteral("textBrowser_16"));
         textBrowser_16->setGeometry(QRect(10, 30, 290, 60));
+        textBrowser_16->setFont(font15);
         textBrowser_16->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_16->setFrameShape(QFrame::NoFrame);
         textBrowser_16->setFrameShadow(QFrame::Raised);
@@ -1002,7 +1015,7 @@ public:
         textBrowser_11->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         textBrowser_10 = new QTextBrowser(frame_IN_set_4);
         textBrowser_10->setObjectName(QStringLiteral("textBrowser_10"));
-        textBrowser_10->setGeometry(QRect(10, 10, 340, 120));
+        textBrowser_10->setGeometry(QRect(10, 10, 350, 120));
         textBrowser_10->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_10->setFrameShape(QFrame::NoFrame);
         textBrowser_10->setFrameShadow(QFrame::Raised);
@@ -1014,22 +1027,22 @@ public:
         Change_2->setObjectName(QStringLiteral("Change_2"));
         Change_2->setEnabled(true);
         Change_2->setGeometry(QRect(10, 190, 150, 40));
-        Change_2->setFont(font1);
+        Change_2->setFont(font8);
         Change_2->setStyleSheet(QStringLiteral(""));
         label_25 = new QLabel(frame_IN_set_4);
         label_25->setObjectName(QStringLiteral("label_25"));
         label_25->setGeometry(QRect(170, 190, 160, 40));
-        QFont font14;
-        font14.setPointSize(11);
-        font14.setBold(true);
-        font14.setWeight(75);
-        label_25->setFont(font14);
+        label_25->setFont(font);
         label_25->setStyleSheet(QStringLiteral(""));
         label_25->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         label_26 = new QLabel(frame_IN_set_4);
         label_26->setObjectName(QStringLiteral("label_26"));
         label_26->setGeometry(QRect(10, 140, 150, 40));
-        label_26->setFont(font14);
+        QFont font17;
+        font17.setPointSize(11);
+        font17.setBold(true);
+        font17.setWeight(75);
+        label_26->setFont(font17);
         label_26->setStyleSheet(QStringLiteral(""));
         label_26->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         avaiable_File_Managers = new QComboBox(frame_IN_set_4);
@@ -1041,20 +1054,20 @@ public:
         pathInfo_4->setObjectName(QStringLiteral("pathInfo_4"));
         pathInfo_4->setEnabled(false);
         pathInfo_4->setGeometry(QRect(170, 140, 370, 40));
-        pathInfo_4->setFont(font4);
+        pathInfo_4->setFont(font);
         pathInfo_4->setStyleSheet(QStringLiteral(""));
         pathInfo_4->setReadOnly(true);
         Open_Mount_Folder = new QPushButton(frame_IN_set_4);
         Open_Mount_Folder->setObjectName(QStringLiteral("Open_Mount_Folder"));
         Open_Mount_Folder->setEnabled(false);
         Open_Mount_Folder->setGeometry(QRect(550, 140, 100, 40));
-        Open_Mount_Folder->setFont(font1);
+        Open_Mount_Folder->setFont(font8);
         Open_Mount_Folder->setStyleSheet(QStringLiteral(""));
         Save_Mount_Config = new QPushButton(frame_IN_set_4);
         Save_Mount_Config->setObjectName(QStringLiteral("Save_Mount_Config"));
         Save_Mount_Config->setEnabled(false);
         Save_Mount_Config->setGeometry(QRect(550, 190, 100, 40));
-        Save_Mount_Config->setFont(font4);
+        Save_Mount_Config->setFont(font);
         Save_Mount_Config->setStyleSheet(QStringLiteral(""));
         frame_IN_set_5 = new QFrame(Config);
         frame_IN_set_5->setObjectName(QStringLiteral("frame_IN_set_5"));
@@ -1066,7 +1079,7 @@ public:
         Change->setObjectName(QStringLiteral("Change"));
         Change->setEnabled(true);
         Change->setGeometry(QRect(10, 240, 150, 40));
-        Change->setFont(font1);
+        Change->setFont(font8);
         Change->setStyleSheet(QStringLiteral(""));
         Compression_Type = new QComboBox(frame_IN_set_5);
         Compression_Type->addItem(QString());
@@ -1077,6 +1090,7 @@ public:
         Compression_Type->setObjectName(QStringLiteral("Compression_Type"));
         Compression_Type->setEnabled(false);
         Compression_Type->setGeometry(QRect(170, 240, 120, 40));
+        Compression_Type->setFont(font10);
         Compression_Type->setStyleSheet(QStringLiteral(""));
         Compression_none_auto = new QComboBox(frame_IN_set_5);
         Compression_none_auto->addItem(QString());
@@ -1084,11 +1098,13 @@ public:
         Compression_none_auto->setObjectName(QStringLiteral("Compression_none_auto"));
         Compression_none_auto->setEnabled(false);
         Compression_none_auto->setGeometry(QRect(300, 240, 90, 40));
+        Compression_none_auto->setFont(font10);
         Compression_none_auto->setStyleSheet(QStringLiteral(""));
         Compression_Type_Value = new QComboBox(frame_IN_set_5);
         Compression_Type_Value->setObjectName(QStringLiteral("Compression_Type_Value"));
         Compression_Type_Value->setEnabled(false);
         Compression_Type_Value->setGeometry(QRect(400, 240, 60, 40));
+        Compression_Type_Value->setFont(font10);
         Compression_Type_Value->setStyleSheet(QStringLiteral(""));
         Status = new QComboBox(frame_IN_set_5);
         Status->addItem(QString());
@@ -1096,35 +1112,40 @@ public:
         Status->setObjectName(QStringLiteral("Status"));
         Status->setEnabled(false);
         Status->setGeometry(QRect(470, 240, 70, 40));
+        Status->setFont(font10);
         Status->setStyleSheet(QStringLiteral(""));
         Save_Compression_Config = new QPushButton(frame_IN_set_5);
         Save_Compression_Config->setObjectName(QStringLiteral("Save_Compression_Config"));
         Save_Compression_Config->setEnabled(false);
         Save_Compression_Config->setGeometry(QRect(550, 240, 100, 40));
-        Save_Compression_Config->setFont(font4);
+        Save_Compression_Config->setFont(font);
         Save_Compression_Config->setStyleSheet(QStringLiteral(""));
         label_24 = new QLabel(frame_IN_set_5);
         label_24->setObjectName(QStringLiteral("label_24"));
         label_24->setGeometry(QRect(470, 210, 70, 30));
-        label_24->setFont(font4);
+        QFont font18;
+        font18.setPointSize(14);
+        font18.setBold(true);
+        font18.setWeight(75);
+        label_24->setFont(font18);
         label_24->setStyleSheet(QStringLiteral(""));
         label_24->setAlignment(Qt::AlignCenter);
         label_23 = new QLabel(frame_IN_set_5);
         label_23->setObjectName(QStringLiteral("label_23"));
         label_23->setGeometry(QRect(400, 210, 60, 30));
-        label_23->setFont(font4);
+        label_23->setFont(font18);
         label_23->setStyleSheet(QStringLiteral(""));
         label_23->setAlignment(Qt::AlignCenter);
         label_22 = new QLabel(frame_IN_set_5);
         label_22->setObjectName(QStringLiteral("label_22"));
         label_22->setGeometry(QRect(290, 210, 110, 30));
-        label_22->setFont(font4);
+        label_22->setFont(font18);
         label_22->setStyleSheet(QStringLiteral(""));
         label_22->setAlignment(Qt::AlignCenter);
         label_21 = new QLabel(frame_IN_set_5);
         label_21->setObjectName(QStringLiteral("label_21"));
         label_21->setGeometry(QRect(160, 210, 140, 30));
-        label_21->setFont(font4);
+        label_21->setFont(font18);
         label_21->setStyleSheet(QStringLiteral(""));
         label_21->setAlignment(Qt::AlignCenter);
         textBrowser_12 = new QTextBrowser(frame_IN_set_5);
@@ -1174,18 +1195,18 @@ public:
         label_18 = new QLabel(NewArchiv);
         label_18->setObjectName(QStringLiteral("label_18"));
         label_18->setGeometry(QRect(610, 200, 360, 30));
-        label_18->setFont(font4);
+        label_18->setFont(font18);
         label_18->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         label_17 = new QLabel(NewArchiv);
         label_17->setObjectName(QStringLiteral("label_17"));
         label_17->setGeometry(QRect(240, 200, 360, 30));
-        label_17->setFont(font4);
+        label_17->setFont(font18);
         label_17->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         BackUP_Path = new QPushButton(NewArchiv);
         BackUP_Path->setObjectName(QStringLiteral("BackUP_Path"));
         BackUP_Path->setEnabled(false);
         BackUP_Path->setGeometry(QRect(10, 230, 220, 40));
-        BackUP_Path->setFont(font1);
+        BackUP_Path->setFont(font8);
         Archive_Key_File = new QComboBox(NewArchiv);
         Archive_Key_File->addItem(QString());
         Archive_Key_File->addItem(QString());
@@ -1200,44 +1221,44 @@ public:
         new_Archive_Name->setObjectName(QStringLiteral("new_Archive_Name"));
         new_Archive_Name->setEnabled(false);
         new_Archive_Name->setGeometry(QRect(610, 230, 380, 40));
-        new_Archive_Name->setFont(font4);
+        new_Archive_Name->setFont(font);
         new_Archive_Name->setStyleSheet(QStringLiteral(""));
         new_Archive_Name->setReadOnly(false);
         Archive_Key = new QLineEdit(NewArchiv);
         Archive_Key->setObjectName(QStringLiteral("Archive_Key"));
         Archive_Key->setEnabled(false);
         Archive_Key->setGeometry(QRect(10, 410, 690, 40));
-        Archive_Key->setFont(font4);
+        Archive_Key->setFont(font);
         Archive_Key->setStyleSheet(QStringLiteral(""));
         Archive_Key->setReadOnly(false);
         label_19 = new QLabel(NewArchiv);
         label_19->setObjectName(QStringLiteral("label_19"));
         label_19->setEnabled(true);
         label_19->setGeometry(QRect(10, 380, 600, 30));
-        label_19->setFont(font4);
+        label_19->setFont(font18);
         label_19->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         Create = new QPushButton(NewArchiv);
         Create->setObjectName(QStringLiteral("Create"));
         Create->setEnabled(false);
         Create->setGeometry(QRect(830, 510, 160, 40));
-        Create->setFont(font1);
+        Create->setFont(font8);
         Create->setStyleSheet(QStringLiteral(""));
         label_27 = new QLabel(NewArchiv);
         label_27->setObjectName(QStringLiteral("label_27"));
         label_27->setGeometry(QRect(700, 410, 50, 40));
-        label_27->setFont(font);
+        label_27->setFont(font18);
         label_27->setLayoutDirection(Qt::LeftToRight);
         label_27->setAlignment(Qt::AlignCenter);
         label_20 = new QLabel(NewArchiv);
         label_20->setObjectName(QStringLiteral("label_20"));
         label_20->setGeometry(QRect(750, 380, 240, 30));
-        label_20->setFont(font4);
+        label_20->setFont(font18);
         label_20->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         new_Archive_Path = new QLineEdit(NewArchiv);
         new_Archive_Path->setObjectName(QStringLiteral("new_Archive_Path"));
         new_Archive_Path->setEnabled(false);
         new_Archive_Path->setGeometry(QRect(240, 230, 360, 40));
-        new_Archive_Path->setFont(font4);
+        new_Archive_Path->setFont(font);
         new_Archive_Path->setStyleSheet(QStringLiteral(""));
         new_Archive_Path->setReadOnly(true);
         textBrowser_6 = new QTextBrowser(NewArchiv);
@@ -1254,7 +1275,11 @@ public:
         progressBar_4->setObjectName(QStringLiteral("progressBar_4"));
         progressBar_4->setEnabled(false);
         progressBar_4->setGeometry(QRect(10, 460, 980, 10));
-        progressBar_4->setFont(font4);
+        QFont font19;
+        font19.setPointSize(10);
+        font19.setBold(true);
+        font19.setWeight(75);
+        progressBar_4->setFont(font19);
         progressBar_4->setStyleSheet(QLatin1String("QProgressBar {\n"
 "background: #aaaaaa;\n"
 "padding: 2px;\n"
@@ -1274,7 +1299,7 @@ public:
         New_Archive->setObjectName(QStringLiteral("New_Archive"));
         New_Archive->setEnabled(true);
         New_Archive->setGeometry(QRect(10, 180, 220, 40));
-        New_Archive->setFont(font4);
+        New_Archive->setFont(font);
         textBrowser_7 = new QTextBrowser(NewArchiv);
         textBrowser_7->setObjectName(QStringLiteral("textBrowser_7"));
         textBrowser_7->setGeometry(QRect(0, 310, 970, 70));
@@ -1287,7 +1312,7 @@ public:
         textBrowser_7->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         textBrowser_8 = new QTextBrowser(NewArchiv);
         textBrowser_8->setObjectName(QStringLiteral("textBrowser_8"));
-        textBrowser_8->setGeometry(QRect(10, 470, 560, 80));
+        textBrowser_8->setGeometry(QRect(10, 470, 810, 80));
         textBrowser_8->setStyleSheet(QStringLiteral("background:rgba(0,0,0,0);"));
         textBrowser_8->setFrameShape(QFrame::NoFrame);
         textBrowser_8->setFrameShadow(QFrame::Raised);
@@ -1369,18 +1394,18 @@ public:
         logo = new QLabel(Help);
         logo->setObjectName(QStringLiteral("logo"));
         logo->setGeometry(QRect(20, 20, 80, 80));
-        logo->setFont(font4);
+        logo->setFont(font19);
         logo->setStyleSheet(QStringLiteral(""));
         logo->setAlignment(Qt::AlignCenter);
         tabWidget->addTab(Help, QString());
         wait = new QLabel(Main);
         wait->setObjectName(QStringLiteral("wait"));
         wait->setGeometry(QRect(-30, -640, 1040, 640));
-        QFont font15;
-        font15.setPointSize(24);
-        font15.setBold(true);
-        font15.setWeight(75);
-        wait->setFont(font15);
+        QFont font20;
+        font20.setPointSize(24);
+        font20.setBold(true);
+        font20.setWeight(75);
+        wait->setFont(font20);
         wait->setStyleSheet(QLatin1String("background-color: rgba(0, 0, 0, 200);\n"
 "color:#FFFFFF;"));
         wait->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
@@ -1403,7 +1428,7 @@ public:
         pathInfo_11 = new QLineEdit(Main);
         pathInfo_11->setObjectName(QStringLiteral("pathInfo_11"));
         pathInfo_11->setGeometry(QRect(30, -290, 280, 40));
-        pathInfo_11->setFont(font13);
+        pathInfo_11->setFont(font16);
         pathInfo_11->setStyleSheet(QStringLiteral("background:#555; color:#FFFFFF; margin-top: -2px;"));
         pathInfo_11->setReadOnly(true);
         frame_login = new QFrame(Main);
@@ -1429,6 +1454,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(pass->sizePolicy().hasHeightForWidth());
         pass->setSizePolicy(sizePolicy);
+        pass->setFont(font10);
         pass->setStyleSheet(QLatin1String("background-color: rgba(0, 0, 0,63);\n"
 "border-top: 1px solid #000000;\n"
 "border-left: 1px solid #000000;\n"
@@ -1442,21 +1468,13 @@ public:
         pass_OK->setObjectName(QStringLiteral("pass_OK"));
         pass_OK->setEnabled(false);
         pass_OK->setGeometry(QRect(440, 20, 90, 40));
-        QFont font16;
-        font16.setPointSize(8);
-        font16.setBold(true);
-        font16.setWeight(75);
-        pass_OK->setFont(font16);
+        pass_OK->setFont(font);
         pass_OK->setStyleSheet(QStringLiteral(""));
         pass_OK->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
         label_pass = new QLabel(frame_login);
         label_pass->setObjectName(QStringLiteral("label_pass"));
         label_pass->setGeometry(QRect(30, 20, 380, 40));
-        QFont font17;
-        font17.setPointSize(8);
-        font17.setBold(false);
-        font17.setWeight(50);
-        label_pass->setFont(font17);
+        label_pass->setFont(font8);
         label_pass->setStyleSheet(QLatin1String("color:#FFFFFF;\n"
 "border:0px;\n"
 "background:rgba(0,0,0,0);"));
@@ -1465,13 +1483,14 @@ public:
         loading = new QLabel(frame_login);
         loading->setObjectName(QStringLiteral("loading"));
         loading->setGeometry(QRect(-100, -110, 710, 110));
-        loading->setFont(font11);
+        loading->setFont(font18);
         loading->setStyleSheet(QLatin1String("background:rgba(0,0,0,0);\n"
 "color:rgba(255,255,255,31);"));
         loading->setAlignment(Qt::AlignCenter);
         frame_login_info = new QFrame(frame_login);
         frame_login_info->setObjectName(QStringLiteral("frame_login_info"));
         frame_login_info->setGeometry(QRect(20, -70, 410, 60));
+        frame_login_info->setFont(font10);
         frame_login_info->setStyleSheet(QLatin1String("QFrame {\n"
 "background: #03224c;\n"
 "padding: 2px;\n"
@@ -1487,24 +1506,24 @@ public:
         loading_2 = new QLabel(frame_login_info);
         loading_2->setObjectName(QStringLiteral("loading_2"));
         loading_2->setGeometry(QRect(-100, -110, 710, 110));
-        loading_2->setFont(font11);
+        loading_2->setFont(font18);
         loading_2->setStyleSheet(QLatin1String("background:rgba(0,0,0,0);\n"
 "color:rgba(255,255,255,31);"));
         loading_2->setAlignment(Qt::AlignCenter);
         label_8 = new QLabel(frame_login_info);
         label_8->setObjectName(QStringLiteral("label_8"));
         label_8->setGeometry(QRect(0, 10, 410, 40));
-        label_8->setFont(font12);
+        label_8->setFont(font);
         label_8->setStyleSheet(QLatin1String("border:0px;\n"
 "background:rgba(0,0,0,0);"));
         label_pass_EXPORT = new QLabel(frame_login);
         label_pass_EXPORT->setObjectName(QStringLiteral("label_pass_EXPORT"));
         label_pass_EXPORT->setGeometry(QRect(30, -70, 380, 40));
-        QFont font18;
-        font18.setPointSize(9);
-        font18.setBold(true);
-        font18.setWeight(75);
-        label_pass_EXPORT->setFont(font18);
+        QFont font21;
+        font21.setPointSize(9);
+        font21.setBold(true);
+        font21.setWeight(75);
+        label_pass_EXPORT->setFont(font21);
         label_pass_EXPORT->setStyleSheet(QLatin1String("color:#FFFFFF;\n"
 "border:0px;\n"
 "background:rgba(0,0,0,0);"));
@@ -1526,13 +1545,13 @@ public:
         add_NEW_BackUP->setObjectName(QStringLiteral("add_NEW_BackUP"));
         add_NEW_BackUP->setEnabled(true);
         add_NEW_BackUP->setGeometry(QRect(250, 438, 540, 50));
-        add_NEW_BackUP->setFont(font18);
+        add_NEW_BackUP->setFont(font);
         add_NEW_BackUP->setStyleSheet(QStringLiteral(""));
         remove_BackUP = new QPushButton(login_black_BG);
         remove_BackUP->setObjectName(QStringLiteral("remove_BackUP"));
         remove_BackUP->setEnabled(true);
         remove_BackUP->setGeometry(QRect(250, 488, 540, 50));
-        remove_BackUP->setFont(font18);
+        remove_BackUP->setFont(font);
         remove_BackUP->setStyleSheet(QStringLiteral(""));
         frame_login_2 = new QFrame(Main);
         frame_login_2->setObjectName(QStringLiteral("frame_login_2"));
@@ -1552,7 +1571,7 @@ public:
         ERROR = new QLabel(frame_login_2);
         ERROR->setObjectName(QStringLiteral("ERROR"));
         ERROR->setGeometry(QRect(10, 0, 520, 40));
-        ERROR->setFont(font4);
+        ERROR->setFont(font);
         ERROR->setStyleSheet(QLatin1String("border:0px;\n"
 "background:rgba(0,0,0,0);"));
         ERROR->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
@@ -1575,14 +1594,14 @@ public:
         pathInfo_2->setObjectName(QStringLiteral("pathInfo_2"));
         pathInfo_2->setEnabled(false);
         pathInfo_2->setGeometry(QRect(-400, 90, 280, 40));
-        pathInfo_2->setFont(font13);
+        pathInfo_2->setFont(font16);
         pathInfo_2->setStyleSheet(QStringLiteral(""));
         pathInfo_2->setReadOnly(true);
         pathInfo_3 = new QLineEdit(Main);
         pathInfo_3->setObjectName(QStringLiteral("pathInfo_3"));
         pathInfo_3->setEnabled(false);
         pathInfo_3->setGeometry(QRect(-400, 140, 280, 40));
-        pathInfo_3->setFont(font13);
+        pathInfo_3->setFont(font16);
         pathInfo_3->setStyleSheet(QStringLiteral(""));
         pathInfo_3->setReadOnly(true);
         loading_GIF = new QLabel(Main);
@@ -1680,8 +1699,8 @@ public:
         textINFO->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Monospace'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Monospace'; font-size:16pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p></body></html>", nullptr));
         html->setText(QApplication::translate("BORG_BackUP_GUI", "Details", nullptr));
         Mount_Info->setText(QApplication::translate("BORG_BackUP_GUI", "Advanced features are not available as long as BackUP is mounted!", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(BackUP), QApplication::translate("BORG_BackUP_GUI", "&BackUP", nullptr));
@@ -1728,8 +1747,8 @@ public:
         textBrowser_9->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:12pt; font-weight:600;\">Create a schedule for an automatic Snapshot.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:12pt;\">Select automatic BackUPs at certain times of the day.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:600;\">Create a schedule for an automatic Snapshot.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Select automatic BackUPs at certain times of the da</span><span style=\" font-family:'Droid Sans Thai';\">y.</span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Schedule), QApplication::translate("BORG_BackUP_GUI", "&Timer", nullptr));
         label_28->setText(QApplication::translate("BORG_BackUP_GUI", "Snapshot Comments", nullptr));
         Remove_Comment->setText(QApplication::translate("BORG_BackUP_GUI", "Remove", nullptr));
@@ -1738,22 +1757,22 @@ public:
 #endif // QT_NO_TOOLTIP
         Change_3->setText(QApplication::translate("BORG_BackUP_GUI", "Change", nullptr));
         Export_Config->setText(QApplication::translate("BORG_BackUP_GUI", "Export", nullptr));
-        label_29->setText(QApplication::translate("BORG_BackUP_GUI", "Export Profiels and Config", nullptr));
+        label_29->setText(QApplication::translate("BORG_BackUP_GUI", "Export Profiles and Config", nullptr));
         textBrowser_16->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:400;\">All profiles and configurations can be exported.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">All profiles and configurations can be exported.</span></p></body></html>", nullptr));
         textBrowser_11->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">Mount Folder<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">To be able to mount a BackUP, a mount folder must be selected.</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:16pt;\">Mount Folder<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">To be able to mount a BackUP, a mount folder must be selected.</span></p></body></html>", nullptr));
         textBrowser_10->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">File Manager<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Your system has been searched for the most common file managers, please select one.</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:16pt;\">File Manager<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">Your system has been searched for the most common file managers, please select one.</span></p></body></html>", nullptr));
 #ifndef QT_NO_TOOLTIP
         Change_2->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
@@ -1761,8 +1780,9 @@ public:
         label_25->setText(QApplication::translate("BORG_BackUP_GUI", "File Managers", nullptr));
         label_26->setText(QApplication::translate("BORG_BackUP_GUI", "Mount Folder", nullptr));
 #ifndef QT_NO_TOOLTIP
-        avaiable_File_Managers->setToolTip(QApplication::translate("BORG_BackUP_GUI", "<html><head/><body><p><br/></p></body></html>", nullptr));
+        avaiable_File_Managers->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
+        pathInfo_4->setText(QString());
 #ifndef QT_NO_TOOLTIP
         Open_Mount_Folder->setToolTip(QApplication::translate("BORG_BackUP_GUI", "<html><head/><body><p>Select a folder.</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
@@ -1807,14 +1827,14 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Compression: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">lz4</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">]</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">   </span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Heuristic: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">auto</span><span style=\" font-family:'Droid S"
-                        "ans Thai'; font-size:10pt; font-weight:400;\">]   Status: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">off</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">]<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:9pt; font-weight:400; font-style:italic;\">You can also change compressions for your snapshots afterwards.</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">Compression: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt;\">lz4</span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">]</span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt;\">   </span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">Heuristic: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt;\">auto</span><span style=\" font-family:'Droid S"
+                        "ans Thai'; font-size:16pt; font-weight:400;\">]   Status: [</span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt;\">off</span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">]<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400; font-style:italic;\">You can also change compressions for your snapshots afterwards.</span></p></body></html>", nullptr));
         textBrowser_5->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai';\">Compression</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Different compressions can be selected, which is best for your backup as well as the backup medium and the respective connection to it, can vary greatly. </span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Compression</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;\">Different compressions can be selected, which is best for your backup as well as the backup medium and the respective connection to it, can vary greatly. </span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Config), QApplication::translate("BORG_BackUP_GUI", "&Config", nullptr));
         label_18->setText(QApplication::translate("BORG_BackUP_GUI", "BackUP Name", nullptr));
         label_17->setText(QApplication::translate("BORG_BackUP_GUI", "BackUP Storage Path", nullptr));
@@ -1828,6 +1848,7 @@ public:
         Archive_Key_File->setItemText(3, QApplication::translate("BORG_BackUP_GUI", "4096++", nullptr));
         Archive_Key_File->setItemText(4, QApplication::translate("BORG_BackUP_GUI", "8192++", nullptr));
 
+        new_Archive_Name->setText(QString());
         label_19->setText(QApplication::translate("BORG_BackUP_GUI", "Passphrase", nullptr));
 #ifndef QT_NO_TOOLTIP
         Create->setToolTip(QString());
@@ -1839,10 +1860,10 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai';\">Create a new Borg BackUP archive.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">For a new BackUP archive please choose the button </span><span style=\" font-family:'Droid Sans Thai';\">NEW Archive</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">.</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; "
-                        "font-weight:400;\">Then select a path in which the archive should be created under </span><span style=\" font-family:'Droid Sans Thai';\">BackUP Path</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">.</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">At </span><span style=\" font-family:'Droid Sans Thai';\">BackUP Name</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\"> enter the name of the backup you want to create.</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Create a new Borg BackUP archive.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">For a new BackUP archive please choose the button </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">NEW Archive</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">.</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; t"
+                        "ext-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Then select a path in which the archive should be created under </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BackUP Path</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">.</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">At </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BackUP Name</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> enter the name of the backup you want to create.</span></p></body></html>", nullptr));
         progressBar_4->setFormat(QString());
 #ifndef QT_NO_TOOLTIP
         New_Archive->setToolTip(QApplication::translate("BORG_BackUP_GUI", "<html><head/><body><p>Select a folder.</p></body></html>", nullptr));
@@ -1852,39 +1873,40 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">Now you should enter a long password in the input field </span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">Passphrase</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\"> or choose a key (</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt;\">Passphrase Key</span><span style=\" font-family:'Droid Sans Thai'; font-size:10pt; font-weight:400;\">) and its desired length.</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Now you should enter a long password in the input field </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Passphrase</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> or choose a key (</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Passphrase Key</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">) and its desired length.</span></p></body></html>", nullptr));
         textBrowser_8->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">Then you can press </span><span style=\" font-family:'Droid Sans Thai';\">Create</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\"> and a new empty Borg BackUP will be created for you. </span></p></body></html>", nullptr));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Then you can press</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Create</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> and a new empty Borg BackUP will be created for you. </span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(NewArchiv), QApplication::translate("BORG_BackUP_GUI", "&New Archive", nullptr));
         textBrowser_13->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:14pt;\">BORG BackUP GUI V 0.8</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">This GUI is not foolproof, the user is forced to read the manual. </span></p>\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; "
-                        "font-weight:400;\"><br /></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI V 0.8</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">This GUI is not foolproof, the user is forced to read the manual. </span></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; t"
+                        "ext-indent:0px; font-size:18pt; font-weight:400;\"><br /></p></body></html>", nullptr));
         textBrowser_14->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:11pt;\">Qt</span><span style=\" font-family:'Droid Sans Thai'; font-size:11pt; font-weight:400;\"> (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</span></p>\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-family:'Droid Sans Thai'; font-size:11pt; font-weig"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Qt</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</span></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-family:'Droid Sans Thai'; font-size:18pt; font-weig"
                         "ht:400;\"><br /></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:11pt;\">BORG BackUP GUI on GitHub:</span><span style=\" font-family:'Droid Sans Thai'; font-size:11pt; font-weight:400;\"> </span><a href=\"https://github.com/MTrage/Borg-BackUP-GUI/\"><span style=\" font-weight:400; text-decoration: underline; color:#007af4;\">https://github.com/MTrage/Borg-BackUP-GUI/</span></a></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:11pt;\">More about Borg BackUP under: </span><a href=\"https://www.borgbackup.org/\"><span style=\" font-family:'Droid Sans Thai'; font-size:11pt; font-weight:400; text-decoration: underline; color:#007af4;\">https://www.borgbackup.org/</span></a></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI on GitHub:</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> </span><a href=\"https://github.com/MTrage/Borg-BackUP-GUI/\"><span style=\" font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;\">https://github.com/MTrage/Borg-BackUP-GUI/</span></a></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">More about Borg BackUP under: </span><a href=\"https://www.borgbackup.org/\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;\">https://www.borgbackup.org/</span></a></p></body></html>", nullptr));
         textBrowser_15->setHtml(QApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">This GUI should allow the user a simple and clear handling of Borg BackUP. </span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:400;\">It should also serve as motivation to give other Qt developers the opportunity to get started quickly and easily, both on Borg projects and when implementing new ideas.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0"
-                        "px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:400;\"><br /></p>\n"
-"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">I wish you lots of fun, Marc-Andr\303\251 Trag\303\251</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">This GUI should allow the user a simple and clear handling of Borg BackUP. </span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:400;\">It should also serve as motivation to give other Qt developers the opportunity to get started quickly and easily, both on Borg projects and when implementing new ideas.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px;"
+                        " margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;\"><br /></p>\n"
+"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">I wish you lots of fun, Marc-Andr\303\251 Trag\303\251</span></p></body></html>", nullptr));
         logo->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(Help), QApplication::translate("BORG_BackUP_GUI", "Help", nullptr));
         wait->setText(QApplication::translate("BORG_BackUP_GUI", "Mission is in progress, please wait!\n"
