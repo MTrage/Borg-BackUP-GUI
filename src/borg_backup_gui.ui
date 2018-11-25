@@ -2211,7 +2211,7 @@ p, li { white-space: pre-wrap; }
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>Export Profiels and Config</string>
+        <string>Export Profiles and Config</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -2447,7 +2447,7 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string/>
        </property>
        <property name="styleSheet">
         <string notr="true"/>
