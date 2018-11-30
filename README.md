@@ -14,7 +14,7 @@ https://www.borgbackup.org/
 ## For all those who already know Borg, the procedure is quite simple: 
 <kbd>
   
-![NEW Archiv](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Archiv.gif)
+![NEW Archive](https://github.com/MTrage/Borg-BackUP-GUI/blob/master/video/New-Archiv.gif)
 
 </kbd>
 
@@ -34,11 +34,6 @@ Create the GUI with it:
 
     qmake && make
     
-## Make bin/BORG-BackUP-GUI executable
-If you just want to have a quick look at "BORG BackUP GUI" and start the /bin/BORG-BackUP-GUI, you have to make the file executable with:
-
-    chmod +x ~/Borg-BackUP-GUI/BORG-BackUP-GUI
-
 
 ## Mount problems?    
 The GUI always uses the mount folder during the initial setup. This can be found in ~/Borg-BackUP-GUI/src/mount so that it is present on Github a blank file is needed e.g. ".gitkeep" this file should be deleted in the folder when using this folder.
