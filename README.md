@@ -39,7 +39,11 @@ Create the GUI with it:
 The GUI always uses the mount folder during the initial setup. This can be found in ~/Borg-BackUP-GUI/src/mount so that it is present on Github a blank file is needed e.g. ".gitkeep" this file should be deleted in the folder when using this folder.
 For e.g. Ubuntu and its derivatives it may be necessary to install the following:
 
+#### Debian (Ubuntu / LinuxMint)
     sudo apt install python3-llfuse
+
+#### Arch Linux (Manjaro / Antergos)
+    sudo pacman -S python-llfuse
 
 ## Instructions can be found here: [Instructions](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
 
