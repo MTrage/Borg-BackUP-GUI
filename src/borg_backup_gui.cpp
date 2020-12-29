@@ -23,7 +23,7 @@
           01101100 01101001 01100001 01101110 01110100 00100000 01100010
           00101101 00110100 00101110 °D
 
-    BORG BackUP GUI – Version 0.8
+    BORG BackUP GUI – Version 0.81
 --> created 01.08.2018 by Marc-André Tragé
 
 --> update 04.08.2018 include QDarkStylesheet (Colin Duquesnoy https://github.com/ColinDuquesnoy/QDarkStyleSheet)
@@ -72,7 +72,11 @@
     update 14.11.2018 Create and read the comment for the snapshots
     update 15.11.2018 Extend the command line function
     update 16.11.2018 Management interface clip for the snapshot comments in the Config area
-    update 19.11.2018 Removing QDarkStylesheet – Complete conversion to Qt5 Style interface
+    update 19.11.2018 Removing QDarkStylesheet – Complete conversion to Qt5 Style interface   
+
+--> update 28.12.2020 Deactivation of the control whether the programme has already been started!
+    update 29.12.2020 Login: Simplification of the BackUP selection.
+    update 29.12.2020 Login: Change to the login sequence to prevent incorrect entries.
 */
 
 #include "borg_backup_gui.h"
@@ -490,7 +494,7 @@ void BORG_BackUP_GUI::Read_BORG_json_LIST_Array(){
             last_modified = Read_BORG_json("repository","last_modified");
 // Shows archive information in textINFO only if values are available.
     if(path!=""){
-        ui->textINFO->setText(json_LIST_detail + "Path: " + path + "\nID: " + id + "\nLocation: " + location + "\nLast Snapshot: " + last_modified.replace("T"," ").replace(".000000","") + "\nEncryption: " + encryption);
+        ui->textINFO->setText(json_LIST_detail + "ID: " + id + "\nLocation: " + location + "\nLast Snapshot: " + last_modified.replace("T"," ").replace(".000000","") + "\nEncryption: " + encryption);
     }
 // Cache the info values for the HTML Info Page.
     html_Path          = path;
@@ -2457,9 +2461,11 @@ void BORG_BackUP_GUI::on_pass_returnPressed(){
 void BORG_BackUP_GUI::on_pass_textChanged(const QString a){
     if(a!=""){
         ui->label_pass->setGeometry(QRect(20, -50, 380, 40));
+           ui->pass_OK->setEnabled(true);
     }
     else{
         ui->label_pass->setGeometry(QRect(30, 20, 380, 40));
+           ui->pass_OK->setEnabled(false);
     }
 }
 
@@ -3056,9 +3062,10 @@ void BORG_BackUP_GUI::on_tabWidget_tabBarClicked(){
 void BORG_BackUP_GUI::on_all_Profiles_currentRowChanged(int currentRow){
     QString BackUP = ui->all_Profiles->item(currentRow)->text();
     BackUP_Name = BackUP;
+             ui->pass->setEnabled(true);
              ui->pass->setFocus();
+             ui->label_pass->setGeometry(QRect(30, 20, 380, 40));
     ui->remove_BackUP->show();
-          ui->pass_OK->setEnabled(true);
 }
 
 // Allows to add an existing BackUP created with BORG BackUP GUI to the startup selection.

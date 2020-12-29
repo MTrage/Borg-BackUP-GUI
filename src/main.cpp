@@ -9,7 +9,6 @@
 #include <QFile>
 #include <QUrl>
 #include <QDir>
-
 static int KILLER = 1;
 static QString Borg_OK_Task,
                Borg_OK_df,
@@ -97,8 +96,8 @@ int main(int argc, char *argv[]){
         }
     }
 // END
-  
-  /* Deactivation of the control whether the programme has already been started! 
+
+    /*
     if(KILLER==1){
         // For future expansion.
     }
@@ -119,6 +118,7 @@ int main(int argc, char *argv[]){
         return 0;
     }
     */
+
     b = argv[1];
     if(b=="--help" || b=="-h"){
         qInfo(qPrintable("\n"+Logo));

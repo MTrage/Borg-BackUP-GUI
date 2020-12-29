@@ -930,6 +930,7 @@ border-radius: 3px;
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>50</weight>
         <bold>false</bold>
        </font>
@@ -949,6 +950,7 @@ border-radius: 3px;
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>50</weight>
         <bold>false</bold>
        </font>
@@ -1412,6 +1414,8 @@ color:#FFFFFF;</string>
       <property name="font">
        <font>
         <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -1556,6 +1560,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1578,6 +1583,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1600,6 +1606,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1622,6 +1629,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1644,6 +1652,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1666,6 +1675,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1688,6 +1698,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1843,6 +1854,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>50</weight>
         <bold>false</bold>
        </font>
@@ -1862,6 +1874,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
+        <pointsize>16</pointsize>
         <weight>50</weight>
         <bold>false</bold>
        </font>
@@ -1947,6 +1960,8 @@ p, li { white-space: pre-wrap; }
       <property name="font">
        <font>
         <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -1974,8 +1989,8 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:600;&quot;&gt;Create a schedule for an automatic Snapshot.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Select automatic BackUPs at certain times of the da&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;y.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Create a schedule for an automatic Snapshot.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Select automatic BackUPs at certain times of the da&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;y.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <zorder>WD3</zorder>
@@ -2018,6 +2033,8 @@ p, li { white-space: pre-wrap; }
       <property name="font">
        <font>
         <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -2236,6 +2253,8 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="styleSheet">
@@ -2263,8 +2282,8 @@ p, li { white-space: pre-wrap; }
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;All profiles and configurations can be exported.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:400;&quot;&gt;All profiles and configurations can be exported.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <zorder>Export_Config</zorder>
@@ -2323,8 +2342,8 @@ p, li { white-space: pre-wrap; }
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt;&quot;&gt;Mount Folder&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;To be able to mount a BackUP, a mount folder must be selected.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;Mount Folder&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;To be able to mount a BackUP, a mount folder must be selected.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QTextBrowser" name="textBrowser_10">
@@ -2361,8 +2380,8 @@ p, li { white-space: pre-wrap; }
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt;&quot;&gt;File Manager&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;Your system has been searched for the most common file managers, please select one.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;File Manager&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;Your system has been searched for the most common file managers, please select one.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QPushButton" name="Change_2">
@@ -2612,6 +2631,8 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
@@ -2661,6 +2682,8 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
@@ -2695,6 +2718,8 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
@@ -2719,6 +2744,8 @@ p, li { white-space: pre-wrap; }
        <property name="font">
         <font>
          <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="toolTip">
@@ -2902,8 +2929,8 @@ p, li { white-space: pre-wrap; }
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;Compression: [&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt;&quot;&gt;lz4&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt;&quot;&gt;   &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;Heuristic: [&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt;&quot;&gt;auto&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;]   Status: [&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt;&quot;&gt;off&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;]&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400; font-style:italic;&quot;&gt;You can also change compressions for your snapshots afterwards.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;Compression: [&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;lz4&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;   &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;Heuristic: [&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;auto&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;]   Status: [&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai';&quot;&gt;off&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;]&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400; font-style:italic;&quot;&gt;You can also change compressions for your snapshots afterwards.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QTextBrowser" name="textBrowser_5">
@@ -2940,9 +2967,9 @@ p, li { white-space: pre-wrap; }
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Compression&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:16pt; font-weight:400;&quot;&gt;Different compressions can be selected, which is best for your backup as well as the backup medium and the respective connection to it, can vary greatly. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;Different compressions can be selected, which is best for your backup as well as the backup medium and the respective connection to it, can vary greatly. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <zorder>textBrowser_12</zorder>
@@ -3304,7 +3331,7 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Create a new Borg BackUP archive.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;For a new BackUP archive please choose the button &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;NEW Archive&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Then select a path in which the archive should be created under &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BackUP Path&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;At &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BackUP Name&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; enter the name of the backup you want to create.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -3418,7 +3445,7 @@ border-radius: 3px;
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Now you should enter a long password in the input field &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Passphrase&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; or choose a key (&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Passphrase Key&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;) and its desired length.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
@@ -3456,7 +3483,7 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Then you can press&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Create&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; and a new empty Borg BackUP will be created for you. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
@@ -3539,7 +3566,7 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BORG BackUP GUI V 0.8&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;This GUI is not foolproof, the user is forced to read the manual. &lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -3579,7 +3606,7 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Qt&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BORG BackUP GUI on GitHub:&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; &lt;/span&gt;&lt;a href=&quot;https://github.com/MTrage/Borg-BackUP-GUI/&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;&quot;&gt;https://github.com/MTrage/Borg-BackUP-GUI/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
@@ -3664,7 +3691,7 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;This GUI should allow the user a simple and clear handling of Borg BackUP. &lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:400;&quot;&gt;It should also serve as motivation to give other Qt developers the opportunity to get started quickly and easily, both on Borg projects and when implementing new ideas.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -3839,6 +3866,9 @@ background: qlineargradient(x1:0.7, y1:0, x2: 1, y2: 1, stop: 0 #222222, stop: 1
      <enum>QFrame::Raised</enum>
     </property>
     <widget class="QLineEdit" name="pass">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -3912,7 +3942,7 @@ color:#ffffff;</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>20</y>
+       <y>-200</y>
        <width>380</width>
        <height>40</height>
       </rect>
