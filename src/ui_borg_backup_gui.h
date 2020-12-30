@@ -731,7 +731,7 @@ public:
         Check_Delete->setObjectName(QString::fromUtf8("Check_Delete"));
         Check_Delete->setGeometry(QRect(570, 500, 120, 40));
         Check_Delete->setFont(font);
-        Check_Delete->setStyleSheet(QString::fromUtf8("color:#ffffff;"));
+        Check_Delete->setStyleSheet(QString::fromUtf8(""));
         Check_Delete->setAlignment(Qt::AlignCenter);
         Re_Check_Delete = new QLineEdit(Delete);
         Re_Check_Delete->setObjectName(QString::fromUtf8("Re_Check_Delete"));
@@ -743,7 +743,7 @@ public:
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(340, 500, 270, 40));
         label_4->setFont(font);
-        label_4->setStyleSheet(QString::fromUtf8("color:#ffffff;"));
+        label_4->setStyleSheet(QString::fromUtf8(""));
         label_4->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         frame = new QFrame(Delete);
         frame->setObjectName(QString::fromUtf8("frame"));
@@ -819,14 +819,14 @@ public:
         label_5 = new QLabel(Schedule);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(10, 90, 180, 30));
+        label_5->setFont(font);
+        label_6 = new QLabel(Schedule);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(800, 90, 90, 34));
         QFont font10;
         font10.setPointSize(12);
         font10.setBold(true);
         font10.setWeight(75);
-        label_5->setFont(font10);
-        label_6 = new QLabel(Schedule);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(800, 90, 90, 34));
         label_6->setFont(font10);
         line_4 = new QFrame(Schedule);
         line_4->setObjectName(QString::fromUtf8("line_4"));
@@ -1745,7 +1745,7 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Create a schedule for an automatic Snapshot.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Select automatic BackUPs at certain times of the da</span><span style=\" font-family:'Droid Sans Thai'; font-weight:400;\">y.</span></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Create a schedule for an automatic Snapshot.<br /></span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Select automatic BackUPs at certain times of the day.</span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Schedule), QCoreApplication::translate("BORG_BackUP_GUI", "&Timer", nullptr));
         label_28->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Snapshot Comments", nullptr));
         Remove_Comment->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Remove", nullptr));

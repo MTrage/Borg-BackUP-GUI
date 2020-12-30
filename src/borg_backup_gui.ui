@@ -1393,7 +1393,7 @@ color:#FFFFFF;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:#ffffff;</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string/>
@@ -1442,7 +1442,7 @@ color:#FFFFFF;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:#ffffff;</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Confirmation code #</string>
@@ -1724,7 +1724,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <pointsize>16</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1990,7 +1990,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Create a schedule for an automatic Snapshot.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Select automatic BackUPs at certain times of the da&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-weight:400;&quot;&gt;y.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Create a schedule for an automatic Snapshot.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Select automatic BackUPs at certain times of the day.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <zorder>WD3</zorder>
