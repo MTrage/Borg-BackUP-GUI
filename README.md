@@ -1,6 +1,5 @@
 ![GitHub](https://img.shields.io/github/languages/top/MTrage/Borg-BackUP-GUI?label=Qt%20%28C%2B%2B%29&style=plastic) ![GitHub](https://img.shields.io/github/issues/MTrage/Borg-BackUP-GUI?label=Issues&style=plastic) ![GitHub](https://img.shields.io/github/last-commit/MTrage/Borg-BackUP-GUI?label=Last%20commit&style=plastic) ![GitHub](https://img.shields.io/github/languages/code-size/MTrage/Borg-BackUP-GUI?label=Code%20size&style=plastic) ![GitHub](https://img.shields.io/github/repo-size/MTrage/Borg-BackUP-GUI?label=Repo%20size&style=plastic) ![GitHub](https://img.shields.io/github/license/MTrage/Borg-BackUP-GUI?label=License&style=plastic)<BR>
-Many Borg users know exactly what they are doing and only need this program to simply create or delete a new snapshot. BORG BackUP GUI can also be used by new Borg users to get to their destination very quickly.
-
+### Many Borg users know exactly what they are doing and only need this program to simply create or delete a new snapshot. BORG BackUP GUI can also be used by new Borg users to get to their destination very quickly.<BR>
 [![Instructions](https://img.shields.io/badge/Instructions%20can%20be%20found%20here-Guide%20for%20beginners-blue)](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
 
 <kbd>  
