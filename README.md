@@ -1,4 +1,3 @@
-![GitHub](https://img.shields.io/github/languages/top/MTrage/Borg-BackUP-GUI?label=Qt%20%28C%2B%2B%29&style=plastic) ![GitHub](https://img.shields.io/github/issues/MTrage/Borg-BackUP-GUI?label=Issues&style=plastic) ![GitHub](https://img.shields.io/github/last-commit/MTrage/Borg-BackUP-GUI?label=Last%20commit&style=plastic) ![GitHub](https://img.shields.io/github/languages/code-size/MTrage/Borg-BackUP-GUI?label=Code%20size&style=plastic) ![GitHub](https://img.shields.io/github/repo-size/MTrage/Borg-BackUP-GUI?label=Repo%20size&style=plastic) ![GitHub](https://img.shields.io/github/license/MTrage/Borg-BackUP-GUI?label=License&style=plastic)<BR>
 ## Many Borg users know exactly what they are doing and only need this program to simply create or delete a new snapshot. BORG BackUP GUI can also be used by new Borg users to get to their destination very quickly.<BR>
 ![Tested](https://img.shields.io/badge/Tested%20on-Arch%20Linux%20/%20Manjaro%20/%20Artix%20/%20Antergos%20/%20Debian%20/%20Ubuntu%20/%20Linux%20Mint-green)<BR>
 [![Instructions](https://img.shields.io/badge/Instructions%20can%20be%20found%20here-Guide%20for%20beginners-red)](https://github.com/MTrage/Borg-BackUP-GUI/wiki/Short-instruction)
@@ -49,3 +48,5 @@ For e.g. Ubuntu and its derivatives it may be necessary to install the following
 
 #### If you have any useful changes or improvements, please let me know.
 I wish you a lot of fun with BORG BackUP GUI.
+
+![GitHub](https://img.shields.io/github/languages/top/MTrage/Borg-BackUP-GUI?label=Qt%20%28C%2B%2B%29&style=plastic) ![GitHub](https://img.shields.io/github/issues/MTrage/Borg-BackUP-GUI?label=Issues&style=plastic) ![GitHub](https://img.shields.io/github/last-commit/MTrage/Borg-BackUP-GUI?label=Last%20commit&style=plastic) ![GitHub](https://img.shields.io/github/languages/code-size/MTrage/Borg-BackUP-GUI?label=Code%20size&style=plastic) ![GitHub](https://img.shields.io/github/repo-size/MTrage/Borg-BackUP-GUI?label=Repo%20size&style=plastic) ![GitHub](https://img.shields.io/github/license/MTrage/Borg-BackUP-GUI?label=License&style=plastic)
