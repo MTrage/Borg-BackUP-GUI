@@ -34,3 +34,5 @@ src/moc_borg_backup_gui\.cpp
 src/moc_borg_backup_gui\.o
 
 src/moc_predefs\.h
+
+README.md.backup
