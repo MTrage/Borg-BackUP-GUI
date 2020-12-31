@@ -23,60 +23,7 @@
           01101100 01101001 01100001 01101110 01110100 00100000 01100010
           00101101 00110100 00101110 °D
 
-    BORG BackUP GUI – Version 0.81
 --> created 01.08.2018 by Marc-André Tragé
-
---> update 04.08.2018 include QDarkStylesheet (Colin Duquesnoy https://github.com/ColinDuquesnoy/QDarkStyleSheet)
-
---> update 28.09.2018 PDF-Export (removed on 06.10.2018 will be replaced by direct printing and exporting an WWW Info Page Export)
-    update 29.09.2018 QCloseEvent (event handler)
-    update 30.09.2018 Fix of some unwanted but still annoying little things
-
---> update 01.10.2018 Now with mount monitoring, for the mount folder as well as for the mount state
-    update 01.10.2018 Changeover from mkdir to QDir().mkdir();
-    update 03.10.2018 Implementing a JSON query. Works with both 2D and Array
-    update 06.10.2018 remove PDF-Export
-    update 08.10.2018 HTML Info Page Export
-    update 09.10.2018 include jQuery Circliful Plugin (Patric Gutersohn https://github.com/pguso/jquery-plugin-circliful) for HTML Info Page
-    update 10.10.2018 Build a TrayIcon & Menu
-    update 11.10.2018 Correction of small process errors
-    update 13.10.2018 Crontab Handling
-    update 14.10.2018 Random Key Generator with 1024++, 2048++, 4096++ or 8192++
-    update 15.10.2018 Automatic Config System - creating a new process structure
-    update 17.10.2018 Automatic Config System – implement the control and write functions
-    update 17.10.2018 Fixed rounding error, at a threshold value X, the compressed value and the deduplicated value were set to negative
-    update 18.10.2018 Config Area with new Submenus
-    update 19.10.2018 Config / Mount Settings now with a auto search File Manager function
-    update 20.10.2018 New Selection Area with clever BackUP & Ignore List function
-    update 21.10.2018 Config save & set Config
-    update 22.10.2018 Config read & set Config
-    update 23.10.2018 Process and start-up optimizations
-    update 24.10.2018 Rebuild the GUI Layout
-    update 25.10.2018 "IN & OUT File Dir" Function & exprot values to sh script
-    update 26.10.2018 New Login & more Informations in Delete Area (real time load)
-    update 27.10.2018 Profie Manager
-    update 28.10.2018 Profie Manager with *.removed 6 save check
-    update 29.10.2018 Stabilization of the process flow of the direct borg query to the respective archives including inventory transfer
-    update 30.10.2018 Extended profiles with keys and corresponding start scripts (.sh) with backup copies
-    update 31.10.2018 Testing and bug fixing
-
---> update 01.11.2018 Prevent user input errors
-    update 04.11.2018 Betatest – create a list of issues
-    update 05.11.2018 Work through the list of issues
-    update 06.11.2018 Include Worker Task for an uninterrupted display of the loading gif
-    update 07.11.2018 Revise the entire snapshot process
-    update 08.11.2018 Extended Mount Control System
-    update 09.11.2018 Integration of extended system question ++
-    update 10.11.2018 Create ascii style for comments and terminal output
-    update 13.11.2018 Comment function for snapshots
-    update 14.11.2018 Create and read the comment for the snapshots
-    update 15.11.2018 Extend the command line function
-    update 16.11.2018 Management interface clip for the snapshot comments in the Config area
-    update 19.11.2018 Removing QDarkStylesheet – Complete conversion to Qt5 Style interface   
-
---> update 28.12.2020 Deactivation of the control whether the programme has already been started!
-    update 29.12.2020 Login: Simplification of the BackUP selection.
-    update 29.12.2020 Login: Change to the login sequence to prevent incorrect entries.
 */
 
 #include "borg_backup_gui.h"
@@ -752,6 +699,7 @@ void BORG_BackUP_GUI::Show_Hide(){
     }
 }
 
+
 // ––– SystemTrayIcon Buton Actions ––––––––––––––––––––––––––
 void BORG_BackUP_GUI::Show_Hide_Icon(QSystemTrayIcon::ActivationReason a){
     if (a == QSystemTrayIcon::Trigger){
@@ -765,6 +713,7 @@ void BORG_BackUP_GUI::Show_Hide_Icon(QSystemTrayIcon::ActivationReason a){
         }
     }
 }
+
 
 // ––– Embedding the SystemTrayIcon ––––––––––––––––––––––––––
 void BORG_BackUP_GUI::SystemTrayIcon(QString a){
@@ -3278,6 +3227,10 @@ void BORG_BackUP_GUI::on_Create_clicked(){
          ui->Archive_Key_File->setCurrentIndex(0);
          ui->Archive_Key->setDisabled(true);
     ui->Archive_Key_File->setDisabled(true);
+
+    INFO("<b>RESTART NOW !!!<BR>"
+         "</b>The GUI must be restarted so that the created BackUP can be read in again!<BR>");
+    EXIT();
 }
 
 // Unlocking the Comment Manager

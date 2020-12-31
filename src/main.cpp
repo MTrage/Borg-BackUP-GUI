@@ -42,7 +42,6 @@ void df(){
     qInfo(qPrintable(drive));
 }
 
-
 int main(int argc, char *argv[]){
 // BEG double BORG-BackUP-GUI check and close
     QApplication a(argc, argv);
@@ -60,7 +59,7 @@ int main(int argc, char *argv[]){
 
     }
     else{
-        QPixmap e("/home/mjw/Qt-Prj/BORG-BackUP-GUI/src/images/logo.svg");
+        QPixmap e("");
         QMessageBox d;
         d.setIconPixmap(e);
         d.setWindowTitle("ERROR: Borg BackUP must be installed!");
@@ -91,19 +90,18 @@ int main(int argc, char *argv[]){
     if(Borg_ERROR_Task == ""){
         QString task_READ_length = QString::number(Borg_OK_Task.count());
         int task_length = task_READ_length.toInt();
-        if(task_length > 6){
+        if(task_length > 8){
             KILLER = 0;
         }
     }
 // END
 
-    /*
     if(KILLER==1){
         // For future expansion.
     }
     else{
         qInfo("\n---> BORG BackUP GUI is allready running! <---");
-        QPixmap e("/home/mjw/Qt-Prj/BORG-BackUP-GUI/src/images/logo.svg");
+        QPixmap e("");
         QMessageBox d;
         d.setWindowTitle("ERROR");
         d.setInformativeText("<b>BORG BackUP GUI</b> should never be run multiple times. In the case of particularly large data volumes (usually in connection with an initial setup),<BR>""<BR>""<b>BORG BackUP GUI</b> may crash as a result of connection interruptions. However, <b>Borg BackUP</b> processes its tasks separately in the background.<BR>""<BR>""You should be aware of this,<BR>""if this message should be completely unexpected for you.");
@@ -117,7 +115,6 @@ int main(int argc, char *argv[]){
         }
         return 0;
     }
-    */
 
     b = argv[1];
     if(b=="--help" || b=="-h"){
@@ -129,7 +126,6 @@ int main(int argc, char *argv[]){
               "    -p, --philosophy --> Philosophy and intention of the builder\n"
               "    -a, --available  --> calls \"df -HT\" and \"inxi -dc0\" in the system\n"
               "                         to display an overview of the available Drives.\n"
-              "    -l, --list       --> List all Configuration Profiles\n"
               "–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––\n");
         return 0;
     }
@@ -149,40 +145,6 @@ int main(int argc, char *argv[]){
         qInfo(qPrintable("\n"+Logo));
         qInfo("–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––\n");
         df();
-        return 0;
-    }
-    if(b=="-l" || b=="--list"){
-        QString read_all_BackUPs;
-        QDir directory("/home/mjw/Qt-Prj/BORG-BackUP-GUI/src/profiles/");
-
-        QStringList sh   = directory.entryList(QStringList() << "*.PASSPHRASE",QDir::Files);
-        QStringList sh_r = directory.entryList(QStringList() << "*.removed",QDir::Files);
-        int i = 0;
-
-        foreach(QString filename, sh) {
-            QString a = "";
-            if(read_all_BackUPs!=""){a = "\n";}
-            read_all_BackUPs = read_all_BackUPs + a + qPrintable("        NR." + QString::number(i+1) + " --> " + sh[i].replace(".PASSPHRASE",""));
-            ++i;
-        }
-        qInfo(qPrintable("\n"+Logo));
-        qInfo("–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––\n"
-              "    BackUPs that can be managed directly:");
-        qInfo(qPrintable(read_all_BackUPs));
-        read_all_BackUPs = "";
-        i = 0;
-        foreach(QString filename, sh_r) {
-            QString a = "";
-            if(read_all_BackUPs!=""){a = "\n";}
-            read_all_BackUPs = read_all_BackUPs + a + qPrintable("        NR." + QString::number(i+1) + " --> " + sh_r[i].replace(".removed",""));
-            ++i;
-        }
-        qInfo("\n–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
-        qInfo(qPrintable("    Configuration profiles of BackUPs that have been removed:"));
-        qInfo(qPrintable(read_all_BackUPs));
-        qInfo("\n–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
-        qInfo("    If a BackUP which has already been managed is removed and added again, it is possible to use the saved\n"
-              "    configuration when re-importing it. This means that settings once made are not lost.\n");
         return 0;
     }
 
