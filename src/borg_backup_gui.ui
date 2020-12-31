@@ -3536,9 +3536,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>10</y>
-        <width>860</width>
-        <height>100</height>
+        <y>20</y>
+        <width>870</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -3567,7 +3567,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BORG BackUP GUI V 0.8&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BORG BackUP GUI &lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;Version 0.87&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;This GUI is not foolproof, the user is forced to read the manual. &lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
@@ -3576,9 +3576,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>330</y>
+        <y>390</y>
         <width>980</width>
-        <height>220</height>
+        <height>91</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -3607,17 +3607,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Qt&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;BORG BackUP GUI on GitHub:&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; &lt;/span&gt;&lt;a href=&quot;https://github.com/MTrage/Borg-BackUP-GUI/&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;&quot;&gt;https://github.com/MTrage/Borg-BackUP-GUI/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;More about Borg BackUP under: &lt;/span&gt;&lt;a href=&quot;https://www.borgbackup.org/&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;&quot;&gt;https://www.borgbackup.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt;&quot;&gt;Qt&lt;/span&gt;&lt;span style=&quot; font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;&quot;&gt; (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="Line" name="line_6">
       <property name="geometry">
        <rect>
         <x>-30</x>
-        <y>120</y>
+        <y>130</y>
         <width>1030</width>
         <height>4</height>
        </rect>
@@ -3639,7 +3636,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>-30</x>
-        <y>310</y>
+        <y>360</y>
         <width>1030</width>
         <height>4</height>
        </rect>
@@ -3661,7 +3658,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>130</y>
+        <y>160</y>
         <width>970</width>
         <height>170</height>
        </rect>
@@ -3722,6 +3719,46 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="url_GitHub">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>490</y>
+        <width>480</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>BORG BackUP GUI on GitHub</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="url_Borg">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>490</y>
+        <width>480</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>More about BORG BackUP</string>
       </property>
      </widget>
     </widget>

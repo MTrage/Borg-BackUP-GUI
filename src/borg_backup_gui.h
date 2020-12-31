@@ -148,6 +148,9 @@ private slots:
     void on_Snapshot_Comments_currentRowChanged(int a);
     void on_Export_Config_clicked();
 
+    void on_url_GitHub_clicked();
+    void on_url_Borg_clicked();
+
 private:
     Ui::BORG_BackUP_GUI *ui;
 };

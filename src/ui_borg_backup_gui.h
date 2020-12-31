@@ -190,6 +190,8 @@ public:
     QFrame *line_9;
     QTextBrowser *textBrowser_15;
     QLabel *logo;
+    QPushButton *url_GitHub;
+    QPushButton *url_Borg;
     QLabel *wait;
     QProgressBar *loadBAR_2;
     QProgressBar *loadBAR;
@@ -1341,7 +1343,7 @@ public:
         Help->setObjectName(QString::fromUtf8("Help"));
         textBrowser_13 = new QTextBrowser(Help);
         textBrowser_13->setObjectName(QString::fromUtf8("textBrowser_13"));
-        textBrowser_13->setGeometry(QRect(110, 10, 860, 100));
+        textBrowser_13->setGeometry(QRect(110, 20, 870, 81));
         textBrowser_13->setStyleSheet(QString::fromUtf8("background:rgba(0,0,0,0);"));
         textBrowser_13->setFrameShape(QFrame::NoFrame);
         textBrowser_13->setFrameShadow(QFrame::Raised);
@@ -1351,7 +1353,7 @@ public:
         textBrowser_13->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         textBrowser_14 = new QTextBrowser(Help);
         textBrowser_14->setObjectName(QString::fromUtf8("textBrowser_14"));
-        textBrowser_14->setGeometry(QRect(0, 330, 980, 220));
+        textBrowser_14->setGeometry(QRect(0, 390, 980, 91));
         textBrowser_14->setStyleSheet(QString::fromUtf8("background:rgba(0,0,0,0);"));
         textBrowser_14->setFrameShape(QFrame::NoFrame);
         textBrowser_14->setFrameShadow(QFrame::Raised);
@@ -1361,21 +1363,21 @@ public:
         textBrowser_14->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         line_6 = new QFrame(Help);
         line_6->setObjectName(QString::fromUtf8("line_6"));
-        line_6->setGeometry(QRect(-30, 120, 1030, 4));
+        line_6->setGeometry(QRect(-30, 130, 1030, 4));
         line_6->setFrameShadow(QFrame::Sunken);
         line_6->setLineWidth(2);
         line_6->setMidLineWidth(2);
         line_6->setFrameShape(QFrame::HLine);
         line_9 = new QFrame(Help);
         line_9->setObjectName(QString::fromUtf8("line_9"));
-        line_9->setGeometry(QRect(-30, 310, 1030, 4));
+        line_9->setGeometry(QRect(-30, 360, 1030, 4));
         line_9->setFrameShadow(QFrame::Sunken);
         line_9->setLineWidth(2);
         line_9->setMidLineWidth(2);
         line_9->setFrameShape(QFrame::HLine);
         textBrowser_15 = new QTextBrowser(Help);
         textBrowser_15->setObjectName(QString::fromUtf8("textBrowser_15"));
-        textBrowser_15->setGeometry(QRect(10, 130, 970, 170));
+        textBrowser_15->setGeometry(QRect(10, 160, 970, 170));
         textBrowser_15->setStyleSheet(QString::fromUtf8("background:rgba(0,0,0,0);"));
         textBrowser_15->setFrameShape(QFrame::NoFrame);
         textBrowser_15->setFrameShadow(QFrame::Raised);
@@ -1389,6 +1391,14 @@ public:
         logo->setFont(font15);
         logo->setStyleSheet(QString::fromUtf8(""));
         logo->setAlignment(Qt::AlignCenter);
+        url_GitHub = new QPushButton(Help);
+        url_GitHub->setObjectName(QString::fromUtf8("url_GitHub"));
+        url_GitHub->setGeometry(QRect(10, 490, 480, 60));
+        url_GitHub->setFont(font1);
+        url_Borg = new QPushButton(Help);
+        url_Borg->setObjectName(QString::fromUtf8("url_Borg"));
+        url_Borg->setGeometry(QRect(500, 490, 480, 60));
+        url_Borg->setFont(font1);
         tabWidget->addTab(Help, QString());
         wait = new QLabel(Main);
         wait->setObjectName(QString::fromUtf8("wait"));
@@ -1882,19 +1892,15 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI V 0.8</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Version 0.87</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">This GUI is not foolproof, the user is forced to read the manual. </span></p>\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; t"
-                        "ext-indent:0px; font-size:18pt; font-weight:400;\"><br /></p></body></html>", nullptr));
+"<p align=\"justify\" style=\"-qt-paragraph-type:emp"
+                        "ty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;\"><br /></p></body></html>", nullptr));
         textBrowser_14->setHtml(QCoreApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Qt</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</span></p>\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-family:'Droid Sans Thai'; font-size:18pt; font-weig"
-                        "ht:400;\"><br /></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI on GitHub:</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> </span><a href=\"https://github.com/MTrage/Borg-BackUP-GUI/\"><span style=\" font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;\">https://github.com/MTrage/Borg-BackUP-GUI/</span></a></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">More about Borg BackUP under: </span><a href=\"https://www.borgbackup.org/\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400; text-decoration: underline; color:#007af4;\">https://www.borgbackup.org/</span></a></p></body></html>", nullptr));
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">Qt</span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\"> (Tools) and this program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</span></p></body></html>", nullptr));
         textBrowser_15->setHtml(QCoreApplication::translate("BORG_BackUP_GUI", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1905,6 +1911,8 @@ public:
                         " margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;\"><br /></p>\n"
 "<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">I wish you lots of fun, Marc-Andr\303\251 Trag\303\251</span></p></body></html>", nullptr));
         logo->setText(QString());
+        url_GitHub->setText(QCoreApplication::translate("BORG_BackUP_GUI", "BORG BackUP GUI on GitHub", nullptr));
+        url_Borg->setText(QCoreApplication::translate("BORG_BackUP_GUI", "More about BORG BackUP", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Help), QCoreApplication::translate("BORG_BackUP_GUI", "Help", nullptr));
         wait->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Mission is in progress, please wait!\n"
 "\n"
