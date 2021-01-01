@@ -4302,7 +4302,7 @@ background:rgba(0,0,0,0);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QListWidget {
-background: #03224c;
+background: #CCC;
 padding: 2px;
 text-align: center;
 border-style: outset;
@@ -4389,7 +4389,7 @@ background: qlineargradient(x1:0.7, y1:0, x2: 1, y2: 1, stop: 0 #333333, stop: 1
     <property name="styleSheet">
      <string notr="true">QLabel {
 border-width: 0px;
-background: qlineargradient(x2:1, y1:1, x1:1, y1:1, stop: 0 rgba(0,0,31,0), stop: 1 rgba(0,0,63,255));
+background: rgba(0,0,0,127);
 }</string>
     </property>
     <property name="text">
@@ -4408,7 +4408,7 @@ background: qlineargradient(x2:1, y1:1, x1:1, y1:1, stop: 0 rgba(0,0,31,0), stop
     <property name="styleSheet">
      <string notr="true">QLabel {
 border-width: 0px;
-background: qlineargradient(x2:1, y1:1, x1:1, y1:1, stop: 0 rgba(120,200,255,255), stop: 1 rgba(0,0,0,0));
+background: rgba(0,0,0,0);
 }</string>
     </property>
     <property name="text">

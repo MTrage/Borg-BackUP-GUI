@@ -9,6 +9,7 @@
 #include <QFile>
 #include <QUrl>
 #include <QDir>
+
 static int KILLER = 1;
 static QString Borg_OK_Task,
                Borg_OK_df,

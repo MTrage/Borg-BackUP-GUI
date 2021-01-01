@@ -41,7 +41,7 @@ private slots:
     QString ask(QString x,QString y,QString z);
 
     void Main_Window();
-    void SystemTrayIcon(QString a);
+    void SystemTrayIcon();
     void EXIT();
 
     void Info_List();

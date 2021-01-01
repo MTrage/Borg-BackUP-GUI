@@ -1588,7 +1588,7 @@ public:
         all_Profiles->setGeometry(QRect(230, -350, 540, 260));
         all_Profiles->setFont(font7);
         all_Profiles->setStyleSheet(QString::fromUtf8("QListWidget {\n"
-"background: #03224c;\n"
+"background: #CCC;\n"
 "padding: 2px;\n"
 "text-align: center;\n"
 "border-style: outset;\n"
@@ -1620,14 +1620,14 @@ public:
         fade_t->setGeometry(QRect(-1200, -10, 1050, 270));
         fade_t->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "border-width: 0px;\n"
-"background: qlineargradient(x2:1, y1:1, x1:1, y1:1, stop: 0 rgba(0,0,31,0), stop: 1 rgba(0,0,63,255));\n"
+"background: rgba(0,0,0,127);\n"
 "}"));
         fade_b = new QLabel(Main);
         fade_b->setObjectName(QString::fromUtf8("fade_b"));
         fade_b->setGeometry(QRect(-1200, 350, 1050, 270));
         fade_b->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "border-width: 0px;\n"
-"background: qlineargradient(x2:1, y1:1, x1:1, y1:1, stop: 0 rgba(120,200,255,255), stop: 1 rgba(0,0,0,0));\n"
+"background: rgba(0,0,0,0);\n"
 "}"));
         BORG_BackUP_GUI->setCentralWidget(Main);
         tabWidget->raise();
