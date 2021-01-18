@@ -10,6 +10,8 @@
 #include <QUrl>
 #include <QDir>
 
+
+
 static int KILLER = 1;
 static QString Borg_OK_Task,
                Borg_OK_df,
@@ -22,6 +24,8 @@ static QString Borg_OK_Task,
                       "    dBBBK'  dB'.BP  dBBBK'  dB BBB    dBBBK'  dBP BB   dBP    dBBBBP  dBP dBP   dBBBP'   dB BBB dBP dBP  dBP\n"
                       "   dB' db  dB'.BP  dBP BB  dB' BB    dB' db  dBP  BB  dBP    dBP BB  dBP dBP   dBP      dB' BB dBP dBP  dBP\n"
                       "  dBBBBP' dBBBBP  dBP dB' dBBBBB    dBBBBP' dBBBBBBB dBBBBP dBP dBP dBBBBBP   dBP      dBBBBB dBBBBBP dBBBP";
+
+
 
 void df(){
     QProcess process_df;
@@ -42,6 +46,8 @@ void df(){
     + Borg_OK_df.replace("%","\%\\\b") + "–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––";
     qInfo(qPrintable(drive));
 }
+
+
 
 int main(int argc, char *argv[]){
 // BEG double BORG-BackUP-GUI check and close

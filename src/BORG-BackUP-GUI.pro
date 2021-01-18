@@ -7,8 +7,6 @@ TARGET = BORG-BackUP-GUI
 
 QT       += core gui widgets
 
-RESOURCES +=
-
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -35,5 +33,3 @@ FORMS += \
         borg_backup_gui.ui
 
 DISTFILES +=
-
-

@@ -9,6 +9,8 @@ class QAction;
 class QListWidget;
 class QListWidgetItem;
 
+
+
 class QDelay : public QThread{
 public:
     static void msleep(unsigned long msecs)
@@ -25,9 +27,13 @@ public:
     }
 };
 
+
+
 namespace Ui {
-class BORG_BackUP_GUI;
+    class BORG_BackUP_GUI;
 }
+
+
 
 class BORG_BackUP_GUI : public QMainWindow{
     Q_OBJECT
@@ -35,7 +41,6 @@ class BORG_BackUP_GUI : public QMainWindow{
 public:
     explicit BORG_BackUP_GUI(QWidget *parent = nullptr);
     ~BORG_BackUP_GUI();
-
 
 private slots:
     QString ask(QString x,QString y,QString z);
@@ -147,13 +152,14 @@ private slots:
     void on_Remove_Comment_clicked();
     void on_Snapshot_Comments_currentRowChanged(int a);
     void on_Export_Config_clicked();
-
     void on_url_GitHub_clicked();
     void on_url_Borg_clicked();
 
 private:
     Ui::BORG_BackUP_GUI *ui;
 };
+
+
 
 class Worker : public QObject {
     Q_OBJECT
@@ -164,5 +170,7 @@ signals:
     void finished();
 private:
 };
+
+
 
 #endif // BORG_BACKUP_GUI_H
