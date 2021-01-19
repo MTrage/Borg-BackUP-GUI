@@ -1931,7 +1931,7 @@ public:
         loading_2->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Loading...", nullptr));
         label_8->setText(QCoreApplication::translate("BORG_BackUP_GUI", " Check input \342\200\223 please wait...", nullptr));
         label_pass_EXPORT->setText(QCoreApplication::translate("BORG_BackUP_GUI", "EXPORT PASSPHRASE MODUS", nullptr));
-        add_NEW_BackUP->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Import a remote BackUP into the configuration", nullptr));
+        add_NEW_BackUP->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Importing a removed BackUP into the configuration", nullptr));
         remove_BackUP->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Remove BackUP from configuration", nullptr));
         ERROR->setText(QString());
         loading_GIF->setText(QString());
