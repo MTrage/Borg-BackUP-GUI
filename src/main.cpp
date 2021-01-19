@@ -88,6 +88,7 @@ int main(int argc, char *argv[]){
         return 0;
     }
     QProcess process;
+    QDelay::msleep(500);
     process.start("pidof BORG-BackUP-GUI");
     process.waitForFinished(-1);
     QString stdout  = process.readAllStandardOutput();

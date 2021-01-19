@@ -1892,7 +1892,7 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Cantarell'; font-size:16pt; font-weight:600; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Version 0.87</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt;\">BORG BackUP GUI </span><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">Version 0.88</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Droid Sans Thai'; font-size:18pt; font-weight:400;\">This GUI is not foolproof, the user is forced to read the manual. </span></p>\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:emp"
                         "ty; margin-top:0px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:400;\"><br /></p></body></html>", nullptr));
@@ -1931,7 +1931,7 @@ public:
         loading_2->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Loading...", nullptr));
         label_8->setText(QCoreApplication::translate("BORG_BackUP_GUI", " Check input \342\200\223 please wait...", nullptr));
         label_pass_EXPORT->setText(QCoreApplication::translate("BORG_BackUP_GUI", "EXPORT PASSPHRASE MODUS", nullptr));
-        add_NEW_BackUP->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Select a new BackUP", nullptr));
+        add_NEW_BackUP->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Import a remote BackUP into the configuration", nullptr));
         remove_BackUP->setText(QCoreApplication::translate("BORG_BackUP_GUI", "Remove BackUP from configuration", nullptr));
         ERROR->setText(QString());
         loading_GIF->setText(QString());

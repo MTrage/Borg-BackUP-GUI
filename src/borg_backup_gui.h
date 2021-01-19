@@ -47,7 +47,7 @@ private slots:
 
     void Main_Window();
     void SystemTrayIcon();
-    void EXIT();
+    void EXIT(QString a);
 
     void Info_List();
     void Build_Delete_List();

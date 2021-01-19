@@ -940,8 +940,9 @@ void BORG_BackUP_GUI::Main_Window(){
             searchI("--exclude '/home/*/.cache/*/'");
     if(QFileInfo(PATH + "/profiles/" + BackUP_Name.replace("\"","") + ".sh").exists()){
         QFile fileA(PATH + "/profiles/" + BackUP_Name.replace("\"","") + ".sh");
-        if (!fileA.open(QIODevice::ReadOnly | QIODevice::Text))
+        if (!fileA.open(QIODevice::ReadOnly | QIODevice::Text)){
             return;
+        }
         QTextStream inA(&fileA);
         QString lineA;
         do{
@@ -1262,7 +1263,7 @@ void BORG_BackUP_GUI::set_Cron_Jobs_in_GUI(){
 
 
 
-// Read all archive profiles
+// Read all archive remove_BackUP
 void BORG_BackUP_GUI::read_all_Profiles(){
     ui->all_Profiles->clear();
     QPixmap Icon(QPixmap::fromImage(b64_LOGO));
@@ -2092,10 +2093,7 @@ void BORG_BackUP_GUI::set_Archive(){
                     ui->Archive_Key_File->setEnabled(true);
                     BackUP_Name = g;
                     QFile::rename(PATH+"/profiles/"+BackUP_Name+".removed", PATH+"/profiles/"+BackUP_Name+".PASSPHRASE");
-                    read_all_Profiles();
-                      ui->all_Profiles->setEnabled(true);
-                    ui->add_NEW_BackUP->setEnabled(true);
-                    setEnabled(true);
+                    EXIT("restart"); // Restart of the GUI is necessary to avoid misassignment!
                 }
                     break;
                 case QMessageBox::Save:{
@@ -2588,7 +2586,7 @@ void BORG_BackUP_GUI::on_pass_OK_clicked(){
             ui->ERROR->setText("Last chance!");
         }
         if(ERROR_count==4){
-            EXIT();
+            EXIT(0);
         }
         ui->pass->setFocus();
         ++ERROR_count;
@@ -3326,8 +3324,7 @@ void BORG_BackUP_GUI::on_remove_BackUP_clicked(){
     switch (b){
     case QMessageBox::Yes:{
         QFile::rename(PATH+"/profiles/"+BackUP_Name+".PASSPHRASE", PATH+"/profiles/"+BackUP_Name+".removed");
-        delete ui->all_Profiles->currentItem();
-        setEnabled(true);
+        EXIT("restart"); // Restart of the GUI is necessary to avoid misassignment!
     }
         break;
     case QMessageBox::Help:{
@@ -3487,9 +3484,9 @@ void BORG_BackUP_GUI::on_Create_clicked(){
          ui->Archive_Key->setDisabled(true);
     ui->Archive_Key_File->setDisabled(true);
 
-    INFO("<b>RESTART NOW !!!<BR>"
+   INFO("<b>RESTART NOW !!!<BR>"
          "</b>The GUI must be restarted so that the created BackUP can be read in again!<BR>");
-    EXIT();
+    EXIT("restart");
 }
 
 
@@ -3577,7 +3574,13 @@ void BORG_BackUP_GUI::on_url_Borg_clicked(){   QDesktopServices::openUrl(QUrl(QS
 
 
 // Even beautiful things come to an end.
-void BORG_BackUP_GUI::EXIT(){
+void BORG_BackUP_GUI::EXIT(QString a){
+    if(a == "restart"){ // RESTART with EXIT("restart";
+        qApp->quit();
+        delete ui;
+        QProcess::startDetached(qApp->arguments()[0], qApp->arguments());
+    }
+
     if(Changes_in_Areas == 0){
         qApp->quit();
         delete ui;
@@ -3652,5 +3655,5 @@ void BORG_BackUP_GUI::EXIT(){
 
 
 // Call the EXIT function.
-void BORG_BackUP_GUI::on_Exit_triggered(){ EXIT(); }
-BORG_BackUP_GUI::~BORG_BackUP_GUI(){       EXIT(); }
+void BORG_BackUP_GUI::on_Exit_triggered(){ EXIT(0); }
+BORG_BackUP_GUI::~BORG_BackUP_GUI(){       EXIT(0); }
