@@ -4196,7 +4196,7 @@ background:rgba(0,0,0,0);</string>
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Import a remote BackUP into the configuration</string>
+      <string>Importing a removed BackUP into the configuration</string>
      </property>
     </widget>
     <widget class="QPushButton" name="remove_BackUP">
